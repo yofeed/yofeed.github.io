@@ -1,0 +1,32 @@
+# Configuration
+permalink: "/:categories/:year/:month/:day/:title/"
+markdown: maruku
+pygments: true
+lsi: false
+exclude: [.gitignore, _config.yml, _libraries, Makefile, tidy.log]
+
+# Custom variables
+title: "/dev/alip"
+url: "http://alexpmil.github.io"
+keywords: "hola mundo"
+
+# Author information
+author:
+  name: "Alex Miller"
+  mail: "alex@miller.im"
+
+# Disqus
+disqus:
+  shortname: "alip"
+
+# Feeds
+
+# Tags
+tag:
+  cloud:
+    levels: 15
+    limit:  100
+
+  list:
+    en: en/tags/index.html
+    tr: tr/tags/index.html
