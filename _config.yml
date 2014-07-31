@@ -1,32 +1,6 @@
-# Configuration
-permalink: "/:categories/:year/:month/:day/:title/"
-markdown: maruku
+name: Dat site title tho
+markdown: redcarpet
 pygments: true
-lsi: false
-exclude: [.gitignore, _config.yml, _libraries, Makefile, tidy.log]
-
-# Custom variables
-title: "/dev/alip"
-url: "http://alexpmil.github.io"
-keywords: "hola mundo"
-
-# Author information
-author:
-  name: "Alex Miller"
-  mail: "alex@miller.im"
-
-# Disqus
-disqus:
-  shortname: "alip"
-
-# Feeds
-
-# Tags
-tag:
-  cloud:
-    levels: 15
-    limit:  100
-
-  list:
-    en: en/tags/index.html
-    tr: tr/tags/index.html
+description: "Write an awesome description for your new site here. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+url: "jekyll-new.joelglovier.com"
+permalink: /posts/:title
