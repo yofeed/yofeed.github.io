@@ -8,9 +8,9 @@ for(i=1;i<title.length+1;i++){
         console.log(map[index]);
         console.log(index);
         index += 1;
-    }, i*100);
+    }, i*200);
 }
 setTimeout(function(){
     $(".site-title").text($(".site-title").text().substring(0,title.length));
     $(".site-title").append('<blink>_</blink>');
-}, (title.length+1)*100)
+}, (title.length+1)*200)
