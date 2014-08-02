@@ -4,7 +4,7 @@ layout: default
 
 <div class="home">
 
-  <h1>Posts</h1>
+  <h1>Things I'm Writing</h1>
 
   <ul class="posts">
     {% for post in site.posts %}
@@ -12,6 +12,28 @@ layout: default
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+  <h1>Pictures I'm Taking</h1>
+
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span> <a class="post-link" href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+
+  <h1>Articles I'm Reading</h1>
+
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span> <a class="post-link" href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+
+  <h1>Books I'm Reading</h1>
+
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span> <a class="post-link" href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
 
 </div>
