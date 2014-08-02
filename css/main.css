@@ -1,3 +1,7 @@
+/* Imports */
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,500italic);
+
+
 /* Base */
 /* ----------------------------------------------------------*/
 
@@ -10,7 +14,8 @@ html, body { height: 100%; }
 
 body {
   background-color: #FFF;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 300;
@@ -45,14 +50,14 @@ a:visited { color: #205caa; }
   border-top: 5px solid #333;
   border-bottom: 1px solid #e8e8e8;
   min-height: 56px;
-  background-color: white;
+  background-color: #0B332F;
 }
 
 .site-title,
 .site-title:hover,
 .site-title:visited {
   display: block;
-  color: #333;
+  color: #FFFFFF;
   font-size: 26px;
   letter-spacing: -1px;
   float: left;
