@@ -170,17 +170,33 @@ a:visited { color: #205caa; }
 }
 
 .blink {
-    animation-duration: 1s;
-    animation-name: blink;
-    animation-iteration-count: infinite;
-    animation-timing-function: steps(2, start);
-}
+/* Standard (Mozilla) */
 @keyframes blink {
-    80% {
-        visibility: hidden;
-    }
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
+.blink {
+  animation: blink 1000ms infinite;
+}
+
+/* Chrome & Safari */
+@-webkit-keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.blink {
+  -webkit-animation: blink 1000ms infinite;
+}
 
 /* Post styles */
 /* ----------------------------------------------------------*/
