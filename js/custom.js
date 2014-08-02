@@ -16,6 +16,6 @@ setTimeout(function(){
     $(".site-title").append('<blink>_</blink>');
 }, (title.length+1)*typing_speed);
 $(".site-title").hover(
-    $(this).addClass("glitch"),
-    $(this).removeClass("glitch")
+    function(){$(this).addClass("glitch");},
+    function(){$(this).removeClass("glitch");}
 );
