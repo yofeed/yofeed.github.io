@@ -12,5 +12,5 @@ for(i=1;i<title.length+1;i++){
 }
 setTimeout(function(){
     $(".site-title").text($(".site-title").text().substring(0,title.length));
-    $(".site-title").append('<span class="blink">_</span>');
+    $(".site-title").append('<blink>_</blink>');
 }, (title.length+1)*100)
