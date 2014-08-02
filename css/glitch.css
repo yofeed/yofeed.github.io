@@ -1,5 +1,5 @@
 .glitch {
-  -webkit-animation: glitch 2s steps(100) infinite;
+  -webkit-animation: glitch 4s steps(100) infinite;
 }
 
 @-webkit-keyframes glitch {
