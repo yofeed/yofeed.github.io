@@ -169,33 +169,19 @@ a:visited { color: #205caa; }
   color: #818181;
 }
 
-.blink {
-/* Standard (Mozilla) */
-@keyframes blink {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-.blink {
-  animation: blink 1000ms infinite;
-}
-
-/* Chrome & Safari */
 @-webkit-keyframes blink {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
+    from {
+        opacity: 1.0;
+    }
+    to {
+        opacity: 0.0;
+    }
 }
-
-.blink {
-  -webkit-animation: blink 1000ms infinite;
+blink {
+    -webkit-animation-name: blink;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: cubic-bezier(1.0, 0, 0, 1.0);
+    -webkit-animation-duration: 1s;
 }
 
 /* Post styles */
