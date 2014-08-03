@@ -193,8 +193,7 @@
     .article-card {
       position: relative;
       display: inline-block;
-      width: 90%;
-      height: 127px;
+      width: 100%;
       vertical-align: top;
       background-color: #fff;
       box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
