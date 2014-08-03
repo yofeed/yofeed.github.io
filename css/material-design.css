@@ -177,8 +177,8 @@
 	.image-card {
       position: relative;
       display: inline-block;
-      width: auto;
-      height: 275px;
+      height: 250px;
+      width: 250px;
       vertical-align: top;
       background-color: #fff;
       box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
