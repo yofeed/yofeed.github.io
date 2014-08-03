@@ -149,6 +149,8 @@ a:visited { color: #205caa; }
 /* Home styles */
 /* ----------------------------------------------------------*/
 
+.section-title {float: left;}
+
 .home h1 { margin-bottom: 25px; }
 
 .posts { list-style-type: none; }
