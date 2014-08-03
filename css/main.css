@@ -334,6 +334,13 @@ background:#535353;
 	word-wrap: break-word;
 }
 
+.provider-text {
+  float: left;
+  display: block;
+  font-size: 15px;
+  color: #818181;
+}
+
 @-webkit-keyframes blink {
     from {
         opacity: 1.0;
