@@ -307,6 +307,7 @@ background:#535353;
 .article-text {
 	float: left;
 	margin-left: 18px;
+	margin-top: 10px;
 }
 
 @-webkit-keyframes blink {
