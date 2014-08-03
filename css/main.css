@@ -167,6 +167,15 @@ a:visited { color: #205caa; }
   color: #818181;
 }
 
+.pictures {
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+.pictures li {
+    margin-right: 25px;
+}
+
 @-webkit-keyframes blink {
     from {
         opacity: 1.0;
