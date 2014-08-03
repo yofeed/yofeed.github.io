@@ -6,7 +6,7 @@ layout: default
 
   <a href=""><h1>Things I'm Writing</h1></a>
 
-  <ul class="posts">
+  <ul class="posts section">
     {% for post in site.categories.blog limit:3  %}
       <li class="card"><a class="post-link" href="{{ post.url }}">{{ post.title }}</a> <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span> </li>
     {% endfor %}
@@ -38,7 +38,7 @@ layout: default
   <br><br><br>
   
 
-  <ul class="pictures">
+  <ul class="pictures section">
     {% for post in site.categories.pictures limit:3 %}
       <li class="image-card"> <img src="{{ post.source }}"/> </li>
     {% endfor %}
@@ -46,7 +46,7 @@ layout: default
   <br>
   <a hre=""><h1>Articles I'm Reading</h1></a>
 
-  <ul class="posts articles">
+  <ul class="posts section">
     {% for post in site.categories.articles limit:4  %}
       <li class="article-card">
         <div class="article-img"><img src="{{ post.image }}"/></div>
@@ -60,7 +60,7 @@ layout: default
 
   <a href="/"><h1>Books I'm Reading</h1></a>
 
-  <ul class="books">
+  <ul class="books section">
     {% for post in site.categories.books limit:2 %}
       <li class="image-card"> <img src="{{ post.source }}"/> </li>
     {% endfor %}
