@@ -47,7 +47,7 @@ layout: default
 
   <ul class="posts articles">
     {% for post in site.categories.articles limit:4  %}
-      <li class="card">
+      <li class="article-card">
         <div class="article-img"><img src="{{ post.image }}"/></div>
         <div class="article-text">
           <a class="post-link" href="{{ post.source }}">{{ post.title }}</a>
