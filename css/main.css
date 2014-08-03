@@ -296,17 +296,34 @@ width:12px;
 background:#535353;
 }
 
-
 .article-img {
-	float:left;
-	width: 190px;
-	height: auto;
-	padding: 0;
+    float: left;
+    width: 300px;
+    height: auto;
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+.article-img .back {
+    width: 100%;
+    -webkit-transform:scale(1.5); /* Safari and Chrome */
+    -moz-transform:scale(1.5); /* Firefox */
+    -ms-transform:scale(1.5); /* IE 9 */
+    -o-transform:scale(1.5); /* Opera */
+     transform:scale(1.5);
+    filter: blur(9px) brightness(50%);
+     -webkit-filter: blur(7px) brightness(50%);
+     -moz-filter: blur(7px) brightness(50%);
+     -ms-filter: blur(7px) brightness(50%);
+     -o-filter: blur(7px) brightness(50%);
 }
 
-.article-img img {
-    width: 100%;
-    height: auto;
+.article-img .fore {
+    width: 70%;
+    position: absolute;
+    left: 15%;
+    top: 0;
+    margin-top: 10%;
 }
 
 .article-text {
