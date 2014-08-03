@@ -176,6 +176,116 @@ a:visited { color: #205caa; }
     margin-right: 25px;
 }
 
+.instagram {
+    padding-top: 125px;
+}
+
+.instagram #icon{
+zoom: .3;
+margin:100px auto;
+height:137px;
+width:137px;
+background:#DBC3B0;
+/*border-radius*/
+-webkit-border-radius:30px;
+   -moz-border-radius:30px;
+        border-radius:30px;
+overflow:hidden;
+/*box-shadow*/
+-webkit-box-shadow:2px 2px 5px #bbb;
+   -moz-box-shadow:2px 2px 5px #bbb;
+        box-shadow:2px 2px 5px #bbb;
+}
+.instagram #icon:hover{
+cursor:pointer;
+}
+.instagram .top{
+position:relative;
+width:137px;
+height:46px;
+/*border-radius*/
+-webkit-border-radius:30px 30px 0px 0px;
+   -moz-border-radius:30px 30px 0px 0px;
+        border-radius:30px 30px 0px 0px;
+background:#835951;
+overflow:hidden;
+}
+.instagram .rainbow{
+margin-left:12px;
+width:20px;
+height:46px;
+}
+.instagram .bow{
+margin:0;
+padding:0;
+float:left;
+width:5px;
+height:46px;
+}
+.instagram .red{
+background:#ff2d6e;
+}
+.instagram .yellow{
+background:#ffd76b;
+}
+.instagram .green{
+background:#74e7ae;
+}
+.instagram .blue{
+background:#4f9fff;
+}
+.instagram .lens{
+position:relative;
+width:73px;
+height:73px;
+padding:0;
+/*border-radius*/
+-webkit-border-radius:73px;
+   -moz-border-radius:73px;
+        border-radius:73px;
+margin:-10px auto;
+background:#e8d8c9;
+overflow:hidden;
+/*box-shadow*/
+-webkit-box-shadow:1px 1px #CAB4A3,     2px 2px #CAB4A3,     3px 3px #CAB4A3,    4px 4px #CAB4A3,    5px 5px #CAB4A3,    6px 6px #CAB4A3,    7px 7px #CAB4A3,    8px 8px #CAB4A3,    9px 9px #CAB4A3,    10px 10px #CAB4A3,    11px 11px #CAB4A3,    12px 12px #CAB4A3,     13px 13px #CAB4A3,    14px 14px #CAB4A3,    15px 15px #CAB4A3,    16px 16px #CAB4A3,    17px 17px #CAB4A3,    18px 18px #CAB4A3,    19px 19px #CAB4A3,    20px 20px #CAB4A3,    21px 21px #CAB4A3,    22px 22px #CAB4A3,     23px 23px #CAB4A3,    24px 24px #CAB4A3,    25px 25px #CAB4A3,    26px 26px #CAB4A3,    27px 27px #CAB4A3,    28px 28px #CAB4A3,    29px 29px #CAB4A3,    30px 30px #CAB4A3,    31px 31px #CAB4A3,    32px 32px #CAB4A3,     33px 33px #CAB4A3,    34px 34px #CAB4A3,    35px 35px #CAB4A3;
+   -moz-box-shadow:1px 1px #CAB4A3,     2px 2px #CAB4A3,     3px 3px #CAB4A3,    4px 4px #CAB4A3,    5px 5px #CAB4A3,    6px 6px #CAB4A3,    7px 7px #CAB4A3,    8px 8px #CAB4A3,    9px 9px #CAB4A3,    10px 10px #CAB4A3,    11px 11px #CAB4A3,    12px 12px #CAB4A3,     13px 13px #CAB4A3,    14px 14px #CAB4A3,    15px 15px #CAB4A3,    16px 16px #CAB4A3,    17px 17px #CAB4A3,    18px 18px #CAB4A3,    19px 19px #CAB4A3,    20px 20px #CAB4A3,    21px 21px #CAB4A3,    22px 22px #CAB4A3,     23px 23px #CAB4A3,    24px 24px #CAB4A3,    25px 25px #CAB4A3,    26px 26px #CAB4A3,    27px 27px #CAB4A3,    28px 28px #CAB4A3,    29px 29px #CAB4A3,    30px 30px #CAB4A3,    31px 31px #CAB4A3,    32px 32px #CAB4A3,     33px 33px #CAB4A3,    34px 34px #CAB4A3,    35px 35px #CAB4A3;
+        box-shadow:1px 1px #CAB4A3,     2px 2px #CAB4A3,     3px 3px #CAB4A3,    4px 4px #CAB4A3,    5px 5px #CAB4A3,    6px 6px #CAB4A3,    7px 7px #CAB4A3,    8px 8px #CAB4A3,    9px 9px #CAB4A3,    10px 10px #CAB4A3,    11px 11px #CAB4A3,    12px 12px #CAB4A3,     13px 13px #CAB4A3,    14px 14px #CAB4A3,    15px 15px #CAB4A3,    16px 16px #CAB4A3,    17px 17px #CAB4A3,    18px 18px #CAB4A3,    19px 19px #CAB4A3,    20px 20px #CAB4A3,    21px 21px #CAB4A3,    22px 22px #CAB4A3,     23px 23px #CAB4A3,    24px 24px #CAB4A3,    25px 25px #CAB4A3,    26px 26px #CAB4A3,    27px 27px #CAB4A3,    28px 28px #CAB4A3,    29px 29px #CAB4A3,    30px 30px #CAB4A3,    31px 31px #CAB4A3,    32px 32px #CAB4A3,     33px 33px #CAB4A3,    34px 34px #CAB4A3,    35px 35px #CAB4A3;
+}
+.instagram .lens:before{
+content:'';
+display:block;
+position:absolute;
+left:0;
+right:0;
+margin:8px auto;
+height:56px;
+width:56px;
+/*border-radius*/
+-webkit-border-radius:56px;
+   -moz-border-radius:56px;
+        border-radius:56px;
+background:#3e3e3e;
+/*box-shadow*/
+-webkit-box-shadow:15px 15px #dccabc;
+   -moz-box-shadow:15px 15px #dccabc;
+        box-shadow:15px 15px #dccabc;
+}
+.instagram .lens:after{
+content:'';
+display:block;
+position:absolute;
+margin-top:18px;
+margin-left:44px;
+height:12px;
+width:12px;
+/*border-radius*/
+-webkit-border-radius:56px;
+   -moz-border-radius:56px;
+        border-radius:56px;
+background:#535353;
+}
+
+
 @-webkit-keyframes blink {
     from {
         opacity: 1.0;
