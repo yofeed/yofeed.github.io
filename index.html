@@ -49,9 +49,10 @@ layout: default
   <ul class="posts section">
     {% for post in site.categories.articles limit:4  %}
       <li class="article-card">
-        <div class="article-img"><img src="{{ post.image }}"/></div>
+        <div class="article-img"><img src="{{ post.thumbnail_url }}"/></div>
         <div class="article-text">
-          <a class="post-link" href="{{ post.source }}">{{ post.title }}</a>
+          <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
+          <span class="post-date">{{ post.provider_url }}</span>
           <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
         </div>
       </li>
