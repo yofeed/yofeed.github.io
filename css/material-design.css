@@ -183,6 +183,16 @@
       background-color: #fff;
       box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
     }
+
+	.image-card {
+      position: relative;
+      display: inline-block;
+      width: auto;
+      height: 300px;
+      vertical-align: top;
+      background-color: #fff;
+      box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
+    }
     
     .dialog {
       box-sizing: border-box;
@@ -203,10 +213,6 @@
       float: right;
     }
     
-    .card.image {
-      background: url(http://lorempixel.com/300/240/nature/);
-      color: #fff;
-    }
     
     /* Misc */
     .center {

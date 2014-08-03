@@ -14,9 +14,9 @@ layout: default
 
   <h1>Pictures I'm Taking</h1>
 
-  <ul class="posts">
+  <ul class="pictures">
     {% for post in site.categories.pictures %}
-      <li> <img src="{{ post.source }}"/> </li>
+      <li class="image-card"> <img src="{{ post.source }}"/> </li>
     {% endfor %}
   </ul>
 
