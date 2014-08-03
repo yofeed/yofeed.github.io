@@ -298,6 +298,16 @@ background:#535353;
 }
 
 
+.article-img {
+	float:left;
+	width: auto;
+	height: 100%;
+	padding: 0;
+}
+.article-text {
+	float: left;
+}
+
 @-webkit-keyframes blink {
     from {
         opacity: 1.0;
