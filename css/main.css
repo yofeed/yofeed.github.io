@@ -182,7 +182,8 @@ a:visited { color: #205caa; }
 }
 
 .instagram .arrow-r {
-    margin-top: -1px;
+    margin-top: 1px;
+    margin-left: 5px;
     float: left;
 }
 
