@@ -178,13 +178,11 @@ a:visited { color: #205caa; }
 
 .instagram {
 	height: 275px;
-    width: 50px;
     padding-top: 125px;
 }
 
 .instagram #icon{
 zoom: .3;
-margin:100px auto;
 height:137px;
 width:137px;
 background:#DBC3B0;
@@ -193,11 +191,14 @@ background:#DBC3B0;
    -moz-border-radius:30px;
         border-radius:30px;
 overflow:hidden;
-/*box-shadow*/
+/*box-shadow
 -webkit-box-shadow:2px 2px 5px #bbb;
    -moz-box-shadow:2px 2px 5px #bbb;
         box-shadow:2px 2px 5px #bbb;
+*/
+box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
 }
+
 .instagram #icon:hover{
 cursor:pointer;
 }
