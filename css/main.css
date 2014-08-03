@@ -303,6 +303,12 @@ background:#535353;
 	height: auto;
 	padding: 0;
 }
+
+.article-img img {
+    width: 100%;
+    height: auto;
+}
+
 .article-text {
 	float: left;
 	margin-left: 18px;
