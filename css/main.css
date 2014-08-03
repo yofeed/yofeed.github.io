@@ -177,6 +177,8 @@ a:visited { color: #205caa; }
 }
 
 .instagram {
+	height: 275px;
+    width: 50px;
     padding-top: 125px;
 }
 

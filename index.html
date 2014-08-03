@@ -15,9 +15,22 @@ layout: default
   <h1>Pictures I'm Taking</h1>
 
   <ul class="pictures">
-    {% for post in site.categories.pictures %}
+    {% for post in site.categories.pictures limit:2 %}
       <li class="image-card"> <img src="{{ post.source }}"/> </li>
     {% endfor %}
+      <li class="instagram">
+      	<div id="icon">
+            <div class="top">
+                <div class="rainbow">
+                    <div class="bow red"></div>
+                    <div class="bow yellow"></div>
+                    <div class="bow green"></div>
+                    <div class="bow blue"></div>
+                </div>
+            </div>
+            <div class="lens"></div>
+    	</div>
+      </li>
   </ul>
   <br>
   <h1>Articles I'm Reading</h1>
