@@ -55,7 +55,10 @@ layout: default
         </div>
         <div class="article-text">
           <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
-          <span class="post-date">{{ post.provider_url }}</span>
+          <div class="provider">
+            <img class="provider-text" src="{{ post.favicon_url }}"/>
+            <span class="provider-text">{{ post.provider_display }}</span>
+          </div
           <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
         </div>
       </li>
