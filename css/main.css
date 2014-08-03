@@ -181,7 +181,14 @@ a:visited { color: #205caa; }
     padding-top: 125px;
 }
 
+.instagram .arrow-r {
+    float: left;
+    margin-left: 30px;
+    margin-top: 4px;
+}
+
 .instagram #icon{
+	float: left;
 position: relative;
 left: 92px;
 zoom: .3;
