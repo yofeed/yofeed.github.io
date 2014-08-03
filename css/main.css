@@ -182,16 +182,13 @@ a:visited { color: #205caa; }
 }
 
 .instagram .arrow-r {
-    float: left;
-    margin-left: 30px;
-    margin-top: 6px;
+    margin-top: -1px;
 }
 
 .instagram #icon{
-	float: left;
 position: relative;
 left: 92px;
-zoom: .3;
+zoom: .2;
 height:137px;
 width:137px;
 background:#DBC3B0;
