@@ -12,8 +12,7 @@ layout: default
     {% endfor %}
   </ul>
 
-  <h1>
-    <span class="instagram">
+    <div class="instagram">
         <div id="icon">
             <div class="top">
                 <div class="rainbow">
@@ -33,9 +32,8 @@ layout: default
                     S70.766,52.676,69.746,53.696z"/>
             </svg>
         </div>
-    </span>
-    Pictures I'm Taking
-  </h1>
+    </div>
+    <h1 class="section-title">Pictures I'm Taking</h1>
 
   <ul class="pictures">
     {% for post in site.categories.pictures limit:3 %}
