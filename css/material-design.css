@@ -188,10 +188,16 @@
       position: relative;
       display: inline-block;
       width: auto;
-      height: 300px;
+      height: 275px;
       vertical-align: top;
       background-color: #fff;
       box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
+      float: left;
+    }
+
+	.image-card img {
+        height: 100%;
+        width: auto;
     }
     
     .dialog {
