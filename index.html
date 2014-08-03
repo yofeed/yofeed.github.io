@@ -11,7 +11,7 @@ layout: default
       <li class="card"><a class="post-link" href="{{ post.url }}">{{ post.title }}</a> <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span> </li>
     {% endfor %}
   </ul>
-
+  <a href="https://instagram.com/alexpmiller">
     <div class="instagram">
         <div id="icon">
             <div class="top">
@@ -26,7 +26,7 @@ layout: default
         </div>
         <div class="arrow-r">
             <svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                 width="10px" height="10px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+                 width="25px" height="25px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
                 <path d="M69.746,53.696l-32.1,32.099c-2.042,2.042-5.352,2.042-7.393,0c-2.041-2.041-2.041-5.352,0-7.393L58.656,50L30.254,21.598
                     c-2.041-2.042-2.041-5.352,0-7.393c2.041-2.042,5.351-2.042,7.393,0l32.1,32.099c1.02,1.021,1.53,2.358,1.53,3.696
                     S70.766,52.676,69.746,53.696z"/>
@@ -34,7 +34,9 @@ layout: default
         </div>
     </div>
     <h1 class="section-title">Pictures I'm Taking</h1>
-    <br><br><br>
+  </a>
+  <br><br><br>
+  
 
   <ul class="pictures">
     {% for post in site.categories.pictures limit:3 %}
