@@ -330,6 +330,8 @@ background:#535353;
 	float: left;
 	margin-left: 18px;
 	margin-top: 10px;
+	width: 482px;
+	word-wrap: break-word;
 }
 
 @-webkit-keyframes blink {
