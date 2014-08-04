@@ -72,19 +72,13 @@ layout: default
 
     <a href="/"><h1>Tunes I'm Grooving</h1></a>
 
-    <ul class="books">
-        {% for post in site.categories.books limit:2 %}
-        <li class="image-card"> <img src="{{ post.source }}"/></li>
+    <ul class="posts">
+        <li class="bop-card"> <a data-width="100%" data-bop-link href="http://bop.fm/p/r8Su"></a><script async src="http://assets.bop.fm/embed.js"></script></li>
+        {% for post in site.categories.bop limit:1 %}
+        <li class="bop-card"> <img src="{{ post.source }}"/></li>
         {% endfor %}
     </ul>
 
     <a href="/"><h1>Books I'm Reading</h1></a>
-
-    <ul class="posts">
-        <li class="image-card"> <a data-width="358" data-bop-link href="http://bop.fm/p/r8Su">May '14 | Listen for free at bop.fm</a><script async src="http://assets.bop.fm/embed.js"></script></li>
-        {% for post in site.categories.books limit:2 %}
-        <li class="image-card"> <a data-width="358" data-bop-link href="http://bop.fm/p/r8Su">May '14 | Listen for free at bop.fm</a><script async src="http://assets.bop.fm/embed.js"></script></li>
-        {% endfor %}
-    </ul>
 
 </div>
