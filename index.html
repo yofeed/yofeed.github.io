@@ -41,7 +41,12 @@ layout: default
     {% endfor %}
   </ul>
   <br>
-  <a hre=""><h1>Articles I'm Reading</h1></a>
+  
+  <a href="/">
+    <span class="read-articles section-icon"></span>
+    <span class="arrow-r"></span>
+    <h1 class="section-title">Articles I'm Reading</h1>
+  </a>
 
   <ul class="posts">
     {% for post in site.categories.articles limit:3  %}
