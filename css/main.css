@@ -153,15 +153,16 @@ a:visited { color: #205caa; }
 .section-title {float: left;}
 .section-icon {
     float: left;
-    height: 16px;
-    width: auto;
+    height: 20px;
+    width: 20px;
     margin-right: 5px;
 }
 
 .arrow-r {
     background: url(/img/arrow-r.svg);
     background-size: 100%;
-    height: 17px;
+    height: 23px;
+    width: 23px;
     margin-top: 1px;
     margin-left: 5px;
     float: left;
