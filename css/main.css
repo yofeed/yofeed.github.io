@@ -172,6 +172,11 @@ a:visited { color: #205caa; }
     background: url(/img/pen.svg);
     background-size: 100%;
 }
+.articles {
+    background: url(/img/glasses.svg);
+    background-size: 100%;
+}
+
 
 .home h1 { margin-bottom: 25px; }
 
