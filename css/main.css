@@ -149,7 +149,28 @@ a:visited { color: #205caa; }
 /* Home styles */
 /* ----------------------------------------------------------*/
 
+
 .section-title {float: left;}
+.section-icon {
+    float: left;
+    height: 16px;
+    width: auto;
+    margin-right: 5px;
+}
+
+.arrow-r {
+    background: url('/img/arrow-r.svg');
+    background-size: 100%;
+    height: 17px;
+    margin-top: 1px;
+    margin-left: 5px;
+    float: left;
+}
+
+.writing {
+    background: url("/img/pen.svg");
+    background-size: 100%;
+}
 
 .home h1 { margin-bottom: 25px; }
 
@@ -180,14 +201,6 @@ a:visited { color: #205caa; }
 }
 
 .instagram {
-}
-
-.arrow-r {
-    background: url('/img/arrow-r.svg');
-    height: 17px;
-    margin-top: 1px;
-    margin-left: 5px;
-    float: left;
 }
 
 .instagram #icon{
