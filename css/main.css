@@ -345,6 +345,8 @@ background:#535353;
 }
 
 .provider-favicon {
+	height: 16px;
+	width: 16px;
 	float: left;
 	margin-right: 6px;
 	margin-top: 3px;
