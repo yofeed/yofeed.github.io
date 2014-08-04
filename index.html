@@ -4,77 +4,87 @@ layout: default
 
 <div class="home">
 
-  <a href="/">
-    <!--<span class="writing section-icon"></span>
-    <span class="arrow-r"></span>-->
-    <h1 class="section-title">Things I'm Writing</h1>
-  </a>
+    <a href="/">
+        <!--<span class="writing section-icon"></span>
+        <span class="arrow-r"></span>-->
+        <h1 class="section-title">Things I'm Writing</h1>
+    </a>
 
-  <ul class="posts">
-    {% for post in site.categories.blog limit:5  %}
-      <li class="card"><a class="post-link" href="{{ post.url }}">{{ post.title }}</a> <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span> </li>
-    {% endfor %}
-  </ul>
-  <a href="https://instagram.com/alexpmiller">
-    <h1 class="section-title">
-      Pictures I'm Taking &nbsp;&nbsp;
-      <div style="display: inline-block; position: relative; top: 8px;" class="instagram">
-        <div id="icon">
-            <div class="top">
-                <div class="rainbow">
-                    <div class="bow red"></div>
-                    <div class="bow yellow"></div>
-                    <div class="bow green"></div>
-                    <div class="bow blue"></div>
+    <ul class="posts">
+        {% for post in site.categories.blog limit:5  %}
+        <li class="card"><a class="post-link" href="{{ post.url }}">{{ post.title }}</a> <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span> </li>
+        {% endfor %}
+    </ul>
+    <a href="https://instagram.com/alexpmiller">
+        <h1 class="section-title">
+            Pictures I'm Taking &nbsp;&nbsp;
+            <div style="display: inline-block; position: relative; top: 8px;" class="instagram">
+                <div id="icon">
+                    <div class="top">
+                        <div class="rainbow">
+                            <div class="bow red"></div>
+                            <div class="bow yellow"></div>
+                            <div class="bow green"></div>
+                            <div class="bow blue"></div>
+                        </div>
+                    </div>
+                    <div class="lens"></div>
                 </div>
             </div>
-            <div class="lens"></div>
-        </div>
-      </div>
-    </h1>
-  </a>
-  <br><br><br>
-  
+        </h1>
+    </a>
+    <br><br><br>
 
-  <ul class="pictures">
-    {% for post in site.categories.pictures limit:3 %}
-      <li class="image-card"> <img src="{{ post.source }}"/> </li>
-    {% endfor %}
-  </ul>
-  <br>
-  
-  <a href="/">
-    <!--<span class="read-articles section-icon"></span>
-    <span class="arrow-r"></span>-->
-    <h1 class="section-title">Articles I'm Reading</h1>
-  </a>
 
-  <ul class="posts">
-    {% for post in site.categories.articles limit:3  %}
-      <li class="article-card">
-        <div class="article-img">
-          <img class="back" src="{{ post.image }}"/>
-          <img class="fore" src="{{ post.image }}"/>
-        </div>
-        <div class="article-text">
-          <a class="post-link" href="{{ post.source }}">{{ post.title }}</a>
-          <div class="provider">
-            <img class="provider-favicon" src="{{ post.favicon_url }}"/>
-            <span class="provider-text">{{ post.provider_display }}</span>
-          </div>
-          <br>
-          <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        </div>
-      </li>
-    {% endfor %}
-  </ul>
+    <ul class="pictures">
+        {% for post in site.categories.pictures limit:3 %}
+        <li class="image-card"> <img src="{{ post.source }}"/> </li>
+        {% endfor %}
+    </ul>
+    <br>
 
-  <a href="/"><h1>Books I'm Reading</h1></a>
+    <a href="/">
+        <!--<span class="read-articles section-icon"></span>
+        <span class="arrow-r"></span>-->
+        <h1 class="section-title">Articles I'm Reading</h1>
+    </a>
 
-  <ul class="books">
-    {% for post in site.categories.books limit:2 %}
-      <li class="image-card"> <img src="{{ post.source }}"/></li>
-    {% endfor %}
-  </ul>
+    <ul class="posts">
+        {% for post in site.categories.articles limit:3  %}
+        <li class="article-card">
+            <div class="article-img">
+                <img class="back" src="{{ post.image }}"/>
+                <img class="fore" src="{{ post.image }}"/>
+            </div>
+            <div class="article-text">
+                <a class="post-link" href="{{ post.source }}">{{ post.title }}</a>
+                <div class="provider">
+                    <img class="provider-favicon" src="{{ post.favicon_url }}"/>
+                    <span class="provider-text">{{ post.provider_display }}</span>
+                </div>
+                <br>
+                <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+
+
+    <a href="/"><h1>Tunes I'm Grooving</h1></a>
+
+    <ul class="books">
+        {% for post in site.categories.books limit:2 %}
+        <li class="image-card"> <img src="{{ post.source }}"/></li>
+        {% endfor %}
+    </ul>
+
+    <a href="/"><h1>Books I'm Reading</h1></a>
+
+    <ul class="posts">
+        <li class="image-card"> <a data-width="358" data-bop-link href="http://bop.fm/p/r8Su">May '14 | Listen for free at bop.fm</a><script async src="http://assets.bop.fm/embed.js"></script></li>
+        {% for post in site.categories.books limit:2 %}
+        <li class="image-card"> <a data-width="358" data-bop-link href="http://bop.fm/p/r8Su">May '14 | Listen for free at bop.fm</a><script async src="http://assets.bop.fm/embed.js"></script></li>
+        {% endfor %}
+    </ul>
 
 </div>
