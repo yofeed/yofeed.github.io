@@ -341,9 +341,14 @@ background:#535353;
   margin-top: 5px;
 }
 
+.provider-favicon {
+	float: left;
+	margin-right: 6px;
+	margin-top: 3px;
+}
+
 .provider-text {
   float: left;
-  margin-right: 5px;
 }
 
 @-webkit-keyframes blink {
