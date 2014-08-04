@@ -50,8 +50,8 @@ layout: default
     {% for post in site.categories.articles limit:4  %}
       <li class="article-card">
         <div class="article-img">
-          <img class="back" src="{{ post.thumbnail_url }}"/>
-          <img class="fore" src="{{ post.thumbnail_url }}"/>
+          <img class="back" src="{{ post.image }}"/>
+          <img class="fore" src="{{ post.image }}"/>
         </div>
         <div class="article-text">
           <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
