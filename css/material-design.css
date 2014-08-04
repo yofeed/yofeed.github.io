@@ -201,14 +201,14 @@ section > * {
 }
 
 .bop-card {
-  height: 450px;
+  height: auto;
   width: 100%;
   position: relative;
   display: inline-block;
   vertical-align: top;
-  background-color: #fff;
+  background-color: #4A4A4A;
   box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
-  padding: 10px 15px;
+  padding: 0;
 }
 
 
