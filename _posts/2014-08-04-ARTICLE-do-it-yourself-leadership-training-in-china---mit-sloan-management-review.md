@@ -1,5 +1,5 @@
 ---
-categories: articles
+categories: [articles]
 provider_url: http://sloanreview.mit.edu
 description: In recent years, China's economy has grown so rapidly - and changed so much - that demand for skilled business managers exceeds supply. Can leadership self-development programs help address that gap? Lin, an executive at the Chinese unit of a luxury carmaker, has a problem.
 provider_display: sloanreview.mit.edu
