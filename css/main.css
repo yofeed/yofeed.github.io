@@ -182,7 +182,9 @@ a:visited { color: #205caa; }
 .instagram {
 }
 
-.instagram .arrow-r {
+.arrow-r {
+    background: url('/img/arrow-r.svg');
+    height: 17px;
     margin-top: 1px;
     margin-left: 5px;
     float: left;
