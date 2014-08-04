@@ -334,11 +334,16 @@ background:#535353;
 	word-wrap: break-word;
 }
 
-.provider-text {
-  float: left;
+.provider {
   display: block;
   font-size: 15px;
   color: #818181;
+  margin-top: 5px;
+}
+
+.provider-text {
+  float: left;
+  margin-right: 5px;
 }
 
 @-webkit-keyframes blink {
