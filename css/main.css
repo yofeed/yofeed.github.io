@@ -319,7 +319,7 @@ background:#535353;
     display: block;
     overflow: hidden;
 }
-.article-img .back {
+.blur-fill .back {
     width: 100%;
     -webkit-transform:scale(1.5); /* Safari and Chrome */
     -moz-transform:scale(1.5); /* Firefox */
@@ -333,7 +333,7 @@ background:#535353;
      -o-filter: blur(7px) brightness(50%);
 }
 
-.article-img .fore {
+.blur-fill .fore {
     max-width: 70%;
     max-height: 70%;
     position: absolute;
