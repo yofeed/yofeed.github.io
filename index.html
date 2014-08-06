@@ -86,7 +86,7 @@ layout: default
     <a href="/"><h1>Podcasts I'm Listening To</h1></a>
 
     <ul class="posts">
-        {% for post in site.categories.podcasts limit:3 %}
+        {% for post in site.categories.podcasts limit:5 %}
         <li class="podcast-card">
             <div class="podcast-img">
                 <img class="blur-fill back" src="{{ post.thumbnail }}"/>
