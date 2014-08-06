@@ -12,7 +12,12 @@ layout: default
 
     <ul class="posts">
         {% for post in site.categories.blog limit:5  %}
-        <li class="card"><a class="post-link" href="{{ post.url }}">{{ post.title }}</a> <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span> </li>
+        <li class="card">
+            <div class="post-info">
+                <a class="post-link" href="{{ post.url }}">{{ post.title }}</a> 
+                <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+            </div>
+        </li>
         {% endfor %}
     </ul>
     <a href="https://instagram.com/alexpmiller">
