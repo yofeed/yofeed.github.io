@@ -374,7 +374,7 @@ background:#535353;
 }
 
 .provider-text:hover {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .podcast-img {
