@@ -6,4 +6,5 @@ show_website: http://www.philosophybites.com
 air_date: Sat  2 August, 2014
 show_name: Philosophy Bites
 thumbnail: http://assets.libsyn.com/content/5497998.jpg
+short_url: http://pca.st/LlEj
 ---
