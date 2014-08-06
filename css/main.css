@@ -372,6 +372,15 @@ background:#535353;
   float: left;
 }
 
+.podcast-img {
+    float: left;
+    width: 15%;
+    height: auto;
+    position: relative;
+    display: block;
+    overflow: hidden;	
+}
+
 @-webkit-keyframes blink {
     from {
         opacity: 1.0;
