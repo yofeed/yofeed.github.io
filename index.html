@@ -88,10 +88,11 @@ layout: default
                 <img class="blur-fill fore" src="{{ post.thumbnail }}"/>
             </div>
             <div class="article-text">
-                <a class="post-link" href="{{ post.show_website }}">{{ post.title }}</a>
+                <a class="post-link" href="{{ post.short_url }}">{{ post.title }}</a>
                 <div class="provider">
-                    <a href="{{ post.source }}">what's up</a>
-                    <span class="provider-text">{{ post.show_name }}</span>
+                    <a href="{{ post.show_website }}">
+                        <span class="provider-text">{{ post.show_name }}</span>
+                    </a>
                 </div>
                 <br>
                 <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
