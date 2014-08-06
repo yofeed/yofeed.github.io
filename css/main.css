@@ -196,6 +196,11 @@ a:visited { color: #205caa; }
   color: #818181;
 }
 
+.post-info {
+    width: 100%;
+    padding: 10px 15px;
+}
+
 .pictures {
     list-style-type: none;
     margin-bottom: 30px;
