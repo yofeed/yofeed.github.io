@@ -52,9 +52,9 @@ layout: default
     <ul class="posts">
         {% for post in site.categories.articles limit:3  %}
         <li class="article-card">
-            <div class="blur-fill article-img">
-                <img class="back" src="{{ post.image }}"/>
-                <img class="fore" src="{{ post.image }}"/>
+            <div class="article-img">
+                <img class="blur-fill back" src="{{ post.image }}"/>
+                <img class="blur-fill fore" src="{{ post.image }}"/>
             </div>
             <div class="article-text">
                 <a class="post-link" href="{{ post.source }}">{{ post.title }}</a>
@@ -83,9 +83,9 @@ layout: default
     <ul class="posts">
         {% for post in site.categories.podcasts limit:3 %}
         <li class="podcast-card">
-            <div class="blur-fill podcast-img">
-                <img class="back" src="{{ post.thumbnail }}"/>
-                <img class="fore" src="{{ post.thumbnail }}"/>
+            <div class="podcast-img">
+                <img class="blur-fill back" src="{{ post.thumbnail }}"/>
+                <img class="blur-fill fore" src="{{ post.thumbnail }}"/>
             </div>
             <div class="article-text">
                 <a class="post-link" href="{{ post.show_website }}">{{ post.title }}</a>
