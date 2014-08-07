@@ -73,4 +73,6 @@ if(BrowserDetect.browser == 'Explorer'){
        cssFilterSupport: true  // Use "-webkit-filter" where available.
     });
 }
-else{}
+else{
+    alert("You are not IE!");
+}
