@@ -66,8 +66,6 @@ var BrowserDetect =
 };
 BrowserDetect.init();
 if(BrowserDetect.browser == 'Explorer' || BrowserDetect.browser == 'Other'){
-    alert("You are IE!");
-    alert(BrowserDetect.browser);
     $(".blur-fill.fore").css({
        "max-width": "100%",
        "max-height": "100%",
