@@ -465,6 +465,18 @@ blink {
 @media screen and (max-width: 750px) {
 	
   .posts .post-link {font-size: 20px; }
+  
+  .provider {
+    font-size: 12px;
+    margin-top: 3px;
+  }
+
+  .provider-favicon {
+    height: 13px;
+    width: 13px;
+    margin-right: 4px;
+    margin-top: 2px;
+  }
 
   .footer-col-1 { width: 50%; }
 
@@ -488,6 +500,18 @@ blink {
 @media screen and (max-width: 600px) {
 
   .posts .post-link {font-size: 16px; }
+  
+  .provider {
+    font-size: 10px;
+    margin-top: 2px;
+  }
+
+  .provider-favicon {
+    height: 11px;
+    width: 11px;
+    margin-right: 4px;
+    margin-top: 2px;
+  }
 
   .wrap { padding: 0 12px; }
 
