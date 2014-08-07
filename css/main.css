@@ -325,6 +325,15 @@ background:#535353;
     overflow: hidden;
 }
 
+.article-text {
+	float: left;
+	margin-left: 18px;
+	margin-top: 10px;
+	margin-right: 10px;
+	width: 55%;
+	word-wrap: break-word;
+}
+
 .blur-fill.back {
     width: 100%;
     -webkit-transform:scale(1.5); /* Safari and Chrome */
@@ -348,15 +357,6 @@ background:#535353;
     left: 0;
     right: 0;
     margin: auto;
-}
-
-.article-text {
-	float: left;
-	margin-left: 18px;
-	margin-top: 10px;
-	margin-right: 10px;
-	width: 62.5%;
-	word-wrap: break-word;
 }
 
 .provider {
