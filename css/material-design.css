@@ -234,6 +234,7 @@ section > * {
 .book-img {
   height: 100%;
   width: auto;
+  overflow: hidden;
 }
 
 .dialog {
