@@ -75,4 +75,5 @@ if(BrowserDetect.browser == 'Explorer'){
 }
 else{
     alert("You are not IE!");
+    alert(BrowserDetect.browser)
 }
