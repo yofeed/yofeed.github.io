@@ -512,6 +512,8 @@ blink {
     margin-right: 4px;
     margin-top: 2px;
   }
+  
+  .posts .post-date { display: none; }
 
   .wrap { padding: 0 12px; }
 
