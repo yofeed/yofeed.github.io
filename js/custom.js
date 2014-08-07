@@ -65,8 +65,9 @@ var BrowserDetect =
 
 };
 BrowserDetect.init();
-if(BrowserDetect.browser == 'Explorer'){
+if(BrowserDetect.browser == 'Explorer' || BrowserDetect.browser == 'Other'){
     alert("You are IE!");
+    alert(BrowserDetect.browser);
     $(".blur-fill.back").foggy({
        blurRadius: 2,          // In pixels.
        opacity: 0.8,           // Falls back to a filter for IE.
@@ -75,5 +76,5 @@ if(BrowserDetect.browser == 'Explorer'){
 }
 else{
     alert("You are not IE!");
-    alert(BrowserDetect.browser)
+    alert(BrowserDetect.browser);
 }
