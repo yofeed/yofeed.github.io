@@ -463,6 +463,8 @@ blink {
 
 
 @media screen and (max-width: 750px) {
+	
+  .post-link {font-size: 20px; }
 
   .footer-col-1 { width: 50%; }
 
@@ -484,6 +486,8 @@ blink {
 }
 
 @media screen and (max-width: 600px) {
+
+  .post-link {font-size: 16px; }
 
   .wrap { padding: 0 12px; }
 
