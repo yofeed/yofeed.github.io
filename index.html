@@ -111,10 +111,12 @@ layout: default
     <ul class="posts">
         {% for post in site.categories.books limit:4 %}
         <li class="book-card">
-            <div class="book-img">
-                <img class="blur-fill back" src="{{ post.thumbnail }}"/>
-                <img class="blur-fill fore" src="{{ post.thumbnail }}"/>
-            </div>
+            <a href="{{ post.source }}">
+                <div class="book-img">
+                    <img class="blur-fill back" src="{{ post.thumbnail }}"/>
+                    <img class="blur-fill fore" src="{{ post.thumbnail }}"/>
+                </div>
+            </a>
         </li>
         {% endfor %}
     </ul>
