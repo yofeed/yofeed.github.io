@@ -236,12 +236,12 @@ a:visited { color: #205caa; }
     -ms-transform:scale(1.5); /* IE 9 */
     -o-transform:scale(1.5); /* Opera */
      transform:scale(1.5);
-    filter: blur(9px) brightness(50%);
+    filter: blur(7px) brightness(50%);
      -webkit-filter: blur(7px) brightness(50%);
      -moz-filter: blur(7px) brightness(50%);
      -ms-filter: blur(7px) brightness(50%);
      -o-filter: blur(7px) brightness(50%);
-     filter: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+DQoJPGZpbHRlciBpZD0iYmx1ciI+DQoJCTxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjciIC8+DQoJPC9maWx0ZXI+DQo8L3N2Zz4NCg==);
+     filter: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+DQoJPGZpbHRlciBpZD0iYmx1ciI+DQoJCTxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjciIC8+DQoJPC9maWx0ZXI+DQo8L3N2Zz4NCg==#blur);
 filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='7');
 }
 
