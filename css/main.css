@@ -204,6 +204,7 @@ a:visited { color: #205caa; }
 .pictures {
     list-style-type: none;
     margin-bottom: 30px;
+    display: inline-block;
 }
 
 .pictures li {
