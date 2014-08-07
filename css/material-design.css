@@ -176,8 +176,8 @@ section > * {
 .image-card {
   position: relative;
   display: inline-block;
-  height: 250px;
-  width: 250px;
+  max-height: 100%;
+  max-width: 31%;
   vertical-align: top;
   background-color: #fff;
   box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
@@ -185,8 +185,8 @@ section > * {
 }
 
 .image-card img {
-  height: 100%;
-  width: auto;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .article-card {
