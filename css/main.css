@@ -241,6 +241,7 @@ a:visited { color: #205caa; }
      -moz-filter: blur(7px) brightness(50%);
      -ms-filter: blur(7px) brightness(50%);
      -o-filter: blur(7px) brightness(50%);
+    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
 }
 
 .blur-fill.fore {
