@@ -184,7 +184,7 @@ section > * {
   float: left;
   margin-right: 3.4%;
 }
-.image-card:last-of-type {margin-right: none !important;}
+.image-card:last-of-type {margin-right: 0 !important;}
 
 .image-card img {
   max-height: 100%;
