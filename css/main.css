@@ -318,7 +318,7 @@ background:#535353;
 
 .article-img {
     float: left;
-    width: 300px;
+    width: 37.5%;
     height: auto;
     position: relative;
     display: block;
@@ -355,7 +355,7 @@ background:#535353;
 	margin-left: 18px;
 	margin-top: 10px;
 	margin-right: 10px;
-	width: 472px;
+	width: 62.5%;
 	word-wrap: break-word;
 }
 
