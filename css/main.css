@@ -241,7 +241,7 @@ a:visited { color: #205caa; }
      -moz-filter: blur(7px) brightness(50%);
      -ms-filter: blur(7px) brightness(50%);
      -o-filter: blur(7px) brightness(50%);
-     filter: url(#blur); /* Firefox needs SVG */
+     filter: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+DQoJPGZpbHRlciBpZD0iYmx1ciI+DQoJCTxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjciIC8+DQoJPC9maWx0ZXI+DQo8L3N2Zz4NCg==);
 filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='7');
 }
 
