@@ -70,14 +70,17 @@ layout: default
 
     <ul class="posts">
         {% for post in site.categories.bop limit:1 %}
-        <li class="bop-card"> <a data-width="100%" data-bop-link href="{{ post.source }}"></a><script async src="http://assets.bop.fm/embed.js"></script></li>
+        <li class="bop-card">
+            <a data-width="100%" data-bop-link href="{{ post.source }}"></a>
+            <script async src="http://assets.bop.fm/embed.js"></script>
+        </li>
         {% endfor %}
     </ul>
 
     <a href="/"><h1>Podcasts I'm Listening To</h1></a>
 
     <ul class="posts">
-        {% for post in site.categories.podcasts limit:5 %}
+        {% for post in site.categories.podcasts limit:3 %}
         <li class="podcast-card">
             <div class="podcast-img">
                 <img class="blur-fill back" src="{{ post.thumbnail }}"/>
