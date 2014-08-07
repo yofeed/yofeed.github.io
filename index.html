@@ -43,7 +43,11 @@ layout: default
 
     <ul class="pictures">
         {% for post in site.categories.photos limit:3 %}
-        <li class="image-card"> <img src="{{ post.thumbnail }}"/> </li>
+        <li class="image-card">
+            <a href="{{ post.source }}" target="_blank">
+                <img src="{{ post.thumbnail }}"/>
+            </a>
+        </li>
         {% endfor %}
     </ul>
     <br>
