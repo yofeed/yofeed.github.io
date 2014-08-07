@@ -14,7 +14,7 @@ layout: default
         {% for post in site.categories.blog limit:5  %}
         <li class="card">
             <div class="post-info">
-                <a class="post-link" href="{{ post.url }}">{{ post.title }}</a> 
+                <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
                 <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
             </div>
         </li>
@@ -82,7 +82,7 @@ layout: default
         <li class="bop-card"> <a data-width="100%" data-bop-link href="{{ post.source }}"></a><script async src="http://assets.bop.fm/embed.js"></script></li>
         {% endfor %}
     </ul>
-    
+
     <a href="/"><h1>Podcasts I'm Listening To</h1></a>
 
     <ul class="posts">
@@ -107,5 +107,16 @@ layout: default
     </ul>
 
     <a href="/"><h1>Books I'm Reading</h1></a>
+
+    <ul class="posts">
+        {% for post in site.categories.books limit:5 %}
+        <li class="book-card">
+            <div class="book-img">
+                <img class="blur-fill back" src="{{ post.thumbnail }}"/>
+                <img class="blur-fill fore" src="{{ post.thumbnail }}"/>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
 
 </div>
