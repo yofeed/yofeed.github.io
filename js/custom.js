@@ -69,8 +69,10 @@ if(BrowserDetect.browser == 'Explorer' || BrowserDetect.browser == 'Other'){
     alert("You are IE!");
     alert(BrowserDetect.browser);
     $(".blur-fill.fore").css({
-       "max-width": "100% !important",
-       "max-height": "100% !important",
+       "max-width": "100%",
+       "max-height": "100%",
+       "width": "100%",
+       "height": "100%"
     });
 }
 else{
