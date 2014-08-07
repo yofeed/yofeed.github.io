@@ -324,6 +324,7 @@ background:#535353;
     display: block;
     overflow: hidden;
 }
+
 .blur-fill.back {
     width: 100%;
     -webkit-transform:scale(1.5); /* Safari and Chrome */
@@ -342,10 +343,10 @@ background:#535353;
     max-width: 70%;
     max-height: 70%;
     position: absolute;
-    top: 0;  
-    bottom: 0;  
-    left: 0;  
-    right: 0;  
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     margin: auto;
 }
 
@@ -388,7 +389,7 @@ background:#535353;
     height: auto;
     position: relative;
     display: block;
-    overflow: hidden;	
+    overflow: hidden;
 }
 
 @-webkit-keyframes blink {

@@ -224,12 +224,15 @@ section > * {
   position: relative;
   display: inline-block;
   height: 275px;
-  width: 20%;
+  width: 23%;
   vertical-align: top;
-  background-color: red;
+  background-color: #fff;
   box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
   float: left;
+  margin-right: 2%;
 }
+
+.book-card:last-of-type { margin-right: 0 !important; }
 
 .book-img {
   height: 100%;
