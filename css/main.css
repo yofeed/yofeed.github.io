@@ -466,6 +466,11 @@ blink {
 	
   .posts .post-link {font-size: 20px; }
   
+  .article-text {
+    margin-left: 13px;
+    margin-righ: 9px
+  }
+  
   .provider {
     font-size: 12px;
     margin-top: 3px;
@@ -505,6 +510,11 @@ blink {
 @media screen and (max-width: 600px) {
 
   .posts .post-link {font-size: 16px; }
+  
+  .article-text {
+    margin-left: 9px;
+    margin-righ: 5px
+  }
   
   .provider {
     font-size: 10px;
