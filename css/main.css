@@ -477,6 +477,11 @@ blink {
     margin-right: 4px;
     margin-top: 2px;
   }
+  
+  .posts .post-date {
+    maring-top: 3px;
+    font-size: 12px;
+  }
 
   .footer-col-1 { width: 50%; }
 
