@@ -182,7 +182,9 @@ section > * {
   background-color: #fff;
   box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
   float: left;
+  margin-right: 3.4%;
 }
+.image-card:last-of-type {margin-right: none !important;}
 
 .image-card img {
   max-height: 100%;
