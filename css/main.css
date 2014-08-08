@@ -514,7 +514,9 @@ blink {
   
   .book-card {
     height: 200px;
-    width: 48% !important; 
+    width: 46% !important;
+    margin-right: 4% !important;
+    
   }
   
   .book-card:nth-of-type(2) { 
