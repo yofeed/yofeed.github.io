@@ -512,6 +512,11 @@ blink {
 
   .posts .post-link {font-size: 16px; }
   
+  .book-card:nth-of-type(even) { 
+    margin-right: 0 !important;
+    clear: both;
+  }
+  
   .article-text {
     margin-left: 9px;
     margin-top: 5px;
