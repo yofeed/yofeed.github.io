@@ -24,6 +24,7 @@ $(document).ready(function(){
         var H = $(card).find('.article-img').height() - $(card).children('.provider-favicon').height() - $(card).children('.post-date').height()-23;
         var T = $(card).find('.post-link span');
         while (T.outerHeight() > H) {
+            console.log('fixing');
             T.text(function (index, text) {
                 return text.replace(/\W*\s(\S)*$/, '...');
             });
