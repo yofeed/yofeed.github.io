@@ -20,8 +20,16 @@ $(document).ready(function(){
         function(){$(this).addClass("glitch");},
         function(){$(this).removeClass("glitch");}
     );
+    $('.article-card').each(function(i, card){
+        var H = $(card).find('.article-img').height() - $(card).children('.provider-favicon').height() - $(card).children('.post-date').height()-5;
+        var T = $(card).find('.post-link span');
+        while (T.outerHeight() > H) {
+            T.text(function (index, text) {
+                return text.replace(/\W*\s(\S)*$/, '...');
+            });
+        }    
+    });
 });
-
 
 
 
