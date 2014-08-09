@@ -512,7 +512,7 @@ blink {
 
 @media screen and (max-width: 600px) {
 
-  .posts .post-link {font-size: 14px; }
+  .posts .post-link {font-size: 15px; }
   
   .book-card {
     height: 200px;
