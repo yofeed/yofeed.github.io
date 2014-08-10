@@ -465,15 +465,15 @@ blink {
 
 
 @media screen and (max-width: 750px) {
-	
+
   .posts .post-link {font-size: 20px; }
-  
+
   .article-text {
     margin-left: 13px;
     margin-top: 7px;
     margin-righ: 9px
   }
-  
+
   .provider {
     font-size: 12px;
     margin-top: 3px;
@@ -485,10 +485,20 @@ blink {
     margin-right: 4px;
     margin-top: 2px;
   }
-  
+
   .posts .post-date {
     maring-top: 3px;
     font-size: 12px;
+  }
+
+  .book-card {
+    height: 225px;
+    width: 46% !important;
+    margin-right: 4% !important;
+  }
+
+  .book-card:nth-of-type(2) {
+    margin-right: 0;
   }
 
   .footer-col-1 { width: 50%; }
@@ -513,28 +523,24 @@ blink {
 @media screen and (max-width: 600px) {
 
   .posts .post-link {font-size: 15px; }
-  
+
   .book-card {
     height: 200px;
     width: 46% !important;
     margin-right: 4% !important;
-    
   }
-  
-  .book-card:nth-of-type(2) { 
+
+  .book-card:nth-of-type(2) {
     margin-right: 0;
   }
-  
-  .book-card:nth-of-type(3) { 
-    clear: both;
-  }
-  
+
+
   .article-text {
     margin-left: 9px;
     margin-top: 0;
     margin-right: 5px
   }
-  
+
   .provider {
     font-size: 10px;
     margin-top: 2px;
@@ -546,7 +552,7 @@ blink {
     margin-right: 4px;
     margin-top: 2px;
   }
-  
+
   .posts .post-date { display: none; }
 
   .wrap { padding: 0 12px; }
