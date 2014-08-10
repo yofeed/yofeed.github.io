@@ -21,30 +21,30 @@ $(document).ready(function(){
         function(){$(this).removeClass("glitch");}
     );
     $('.article-card').each(function(i, card){
-        var H = $(card).find('.article-img').height() - $(card).children('.provider-favicon').height() - $(card).children('.post-date').height()-23;
+        var H = $(card).find('.article-img').height() - $(card).children('.provider-favicon').height() - $(card).children('.post-date').height()-32;
         var T = $(card).find('.post-link span');
         if (T.outerHeight() > H) {
             console.log('fixing');
             T.text(function (index, text) {
                 return text.replace(/\W*\s(\S)*$/, '...');
             });
-        }    
+        }
     });
 });
 
 
 
-var BrowserDetect = 
+var BrowserDetect =
 {
-    init: function () 
+    init: function ()
     {
         this.browser = this.searchString(this.dataBrowser) || "Other";
         this.version = this.searchVersion(navigator.userAgent) ||       this.searchVersion(navigator.appVersion) || "Unknown";
     },
 
-    searchString: function (data) 
+    searchString: function (data)
     {
-        for (var i=0 ; i < data.length ; i++)   
+        for (var i=0 ; i < data.length ; i++)
         {
             var dataString = data[i].string;
             this.versionSearchString = data[i].subString;
@@ -56,14 +56,14 @@ var BrowserDetect =
         }
     },
 
-    searchVersion: function (dataString) 
+    searchVersion: function (dataString)
     {
         var index = dataString.indexOf(this.versionSearchString);
         if (index == -1) return;
         return parseFloat(dataString.substring(index+this.versionSearchString.length+1));
     },
 
-    dataBrowser: 
+    dataBrowser:
     [
         { string: navigator.userAgent, subString: "Chrome",  identity: "Chrome" },
         { string: navigator.userAgent, subString: "MSIE",    identity: "Explorer" },
