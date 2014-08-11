@@ -7,8 +7,6 @@ $(document).ready(function(){
         map[i] = title.substring(0,i)+"_";
         setTimeout(function(){
             $(".site-title").text(map[index]);
-            console.log(map[index]);
-            console.log(index);
             index += 1;
         }, i*typing_speed);
     }
