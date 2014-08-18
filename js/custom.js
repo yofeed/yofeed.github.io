@@ -19,7 +19,7 @@ $(document).ready(function(){
         function(){$(this).removeClass("glitch");}
     );
     $('.article-card').each(function(i, card){
-        var H = $(card).find('.article-img').height() - $(card).children('.provider-favicon').height() - $(card).children('.post-date').height()-32;
+        var H = $(card).find('.article-img').height() - $(card).children('.provider-favicon').height() - $(card).children('.post-date').height()-20;
         var T = $(card).find('.post-link span');
         if (T.outerHeight() > H) {
             console.log('fixing');
