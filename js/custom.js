@@ -27,7 +27,7 @@ $(document).ready(function(){
         if (T.offsetHeight > H) {
             console.log('fixing');
             $(T).text(function (index, text) {
-                return text.replace(/\W*\s(\S)*$/, '...');
+                return text.replace(/\w{2}\W*\s(\S)*$/, '...');
             });
         }
     });
