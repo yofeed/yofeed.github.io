@@ -19,9 +19,9 @@ $(document).ready(function(){
         function(){$(this).removeClass("glitch");}
     );
     $('.article-card').each(function(i, card){
-        var H = $(card).find('.article-img').height() - $(card).children('.provider-favicon').height() - $(card).children('.post-date').height()-20;
+        var H = $(card).find('.article-img').offsetHeight - $(card).children('.provider-text').offsetHeight - $(card).children('.post-date').offsetHeight;
         var T = $(card).find('.post-link span');
-        if (T.outerHeight() > H) {
+        if (T.offsetHeight() > H) {
             console.log('fixing');
             T.text(function (index, text) {
                 return text.replace(/\W*\s(\S)*$/, '...');
