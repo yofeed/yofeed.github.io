@@ -20,7 +20,7 @@ $(document).ready(function(){
     );
     console.log('helloworld')
     $('.article-card').each(function(i, card){
-        var H = $(card).find('.article-img')[0].offsetHeight - $(card).children('.provider-text')[0].offsetHeight - $(card).children('.post-date')[0].offsetHeight;
+        var H = $(card).find('.article-img')[0].offsetHeight - $(card).find('.provider-text')[0].offsetHeight - $(card).find('.post-date')[0].offsetHeight;
         var T = $(card).find('.post-link span')[0];
         if (T.offsetHeight > H) {
             console.log('fixing');
