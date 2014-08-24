@@ -20,9 +20,9 @@ $(document).ready(function(){
     );
     console.log('helloworld')
     $('.article-card').each(function(i, card){
-        var H = $(card).find('.article-img').offsetHeight - $(card).children('.provider-text').offsetHeight - $(card).children('.post-date').offsetHeight;
-        var T = $(card).find('.post-link span');
-        if ($(T).offsetHeight() > H) {
+        var H = $(card).find('.article-img')[0].offsetHeight - $(card).children('.provider-text')[0].offsetHeight - $(card).children('.post-date')[0].offsetHeight;
+        var T = $(card).find('.post-link span')[0];
+        if (T.offsetHeight > H) {
             console.log('fixing');
             $(T).text(function (index, text) {
                 return text.replace(/\W*\s(\S)*$/, '...');
