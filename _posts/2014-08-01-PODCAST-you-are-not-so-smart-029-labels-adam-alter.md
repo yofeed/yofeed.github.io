@@ -1,6 +1,6 @@
 ---
 categories: [podcasts]
-published: 1 August 2014
+published: 2014-08-01T00:00:00
 source: http://pca.st/WzuY
 raw_source: http://traffic.libsyn.com/youarenotsosmart/029_-_Labels_-_Adam_Alter_1.mp3
 provider_url: http://youarenotsosmart.com
