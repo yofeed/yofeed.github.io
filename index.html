@@ -90,7 +90,7 @@ layout: default
                     </a>
                 </div>
                 <br>
-                <span class="post-date">{{ post.published }}</span>
+                <span class="post-date">{{ post.published | date: "%b %-d, %Y" }}</span>
             </div>
         </li>
         {% endfor %}
