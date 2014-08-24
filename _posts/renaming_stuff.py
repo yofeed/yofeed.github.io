@@ -37,17 +37,17 @@ for filename in os.listdir('/home/ubuntu/mr.hyde/_posts'):
     if "PODCAST" in filename:
         print("\n\n"+filename)
         replaceAll('/home/ubuntu/mr.hyde/_posts/'+filename, {
-            "air_date":"source_date",
+            "air_date":"published",
             "show_name":"provider_name",
             "short_url": "source",
             "show_website": "provider_url"
         },
         {"provider_display":"provider_name"})
     """
-    if "PODCAST" in filename:
-        print("\n\n"+filename)
-        replaceAll('/home/ubuntu/mr.hyde/_posts/'+filename, {
-            "\n\n":"\n"
-        },
-        {})
+
+    print("\n\n"+filename)
+    replaceAll('/home/ubuntu/mr.hyde/_posts/'+filename, {
+        "published":"published"
+    },
+    {})
 
