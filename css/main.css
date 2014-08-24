@@ -468,10 +468,18 @@ blink {
 
   .posts .post-link {font-size: 20px; }
 
-  .article-text {
-    margin-left: 13px;
-    margin-top: 7px;
-    margin-righ: 9px
+  .article-card .article-text {
+    margin-left: 3%;
+    margin-top: 0;
+    margin-right: 3%;
+    width: 56%;
+  }
+  
+  .podcast-card .article-text {
+    margin-left: 3%;
+    margin-top: 0;
+    margin-right: 3%;
+    width: 74%;
   }
 
   .provider {
@@ -540,15 +548,15 @@ blink {
   .article-card .article-text {
     margin-left: 3%;
     margin-top: 0;
-    margin-right: 2%;
-    width: 57%;
+    margin-right: 3%;
+    width: 56%;
   }
   
   .podcast-card .article-text {
     margin-left: 3%;
     margin-top: 0;
-    margin-right: 2%;
-    width: 70%;
+    margin-right: 3%;
+    width: 69%;
   }
 
   .provider {
