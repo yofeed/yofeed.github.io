@@ -6,5 +6,6 @@ provider_display: www.economist.com
 favicon_url: http://cdn.static-economist.com/sites/default/files/econfinal_favicon.ico
 title: Decluttering the company
 source: http://www.economist.com/news/business/21610237-businesses-must-fight-relentless-battle-against-bureaucracy-decluttering-company
-image: http://cdn.static-economist.com/sites/default/files/images/print-edition/20140802_WBD000_0.jpg
+thumbnail: http://cdn.static-economist.com/sites/default/files/images/print-edition/20140802_WBD000_0.jpg
+provider_name: www.economist.com
 ---

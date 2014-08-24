@@ -6,5 +6,6 @@ provider_display: sloanreview.mit.edu
 favicon_url: http://sloanreview.mit.edu/static/favicon.ico
 source: http://sloanreview.mit.edu/article/do-it-yourself-leadership-training-in-china/
 title: Do-It-Yourself Leadership Training in China | MIT Sloan Management Review
-image: http://ift.tt/1sT2yA0
+thumbnail: http://ift.tt/1sT2yA0
+provider_name: sloanreview.mit.edu
 ---

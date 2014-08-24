@@ -6,5 +6,6 @@ provider_display: www.theatlantic.com
 favicon_url: http://cdn.theatlantic.com/static/front/images/favicon.ico
 source: http://www.theatlantic.com/business/archive/2014/07/the-only-job-with-an-industry-devoted-to-helping-people-quit/375199/
 title: The Only Job With an Industry Devoted to Helping People Quit
-image: http://ift.tt/1rZRLUu
+thumbnail: http://ift.tt/1rZRLUu
+provider_name: www.theatlantic.com
 ---
