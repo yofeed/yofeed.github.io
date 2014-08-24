@@ -22,7 +22,7 @@ $(document).ready(function(){
     $('.article-card').each(function(i, card){
         $($(card).find('.article-text')[0]).css('height', $(card).find('.article-img')[0].offsetHeight);
         $($(card).find('.post-link')[0]).css('height', $(card).find('.article-img')[0].offsetHeight-17);
-        var H = $(card).find('.article-img')[0].offsetHeight - $(card).find('.provider-text')[0].offsetHeight - $(card).find('.post-date')[0].offsetHeight-5;
+        var H = $(card).find('.article-img')[0].offsetHeight parseInt($($(card).find('.article-text')[0]).css('margin-top')) - $(card).find('.provider-text')[0].offsetHeight - $(card).find('.post-date')[0].offsetHeight-5;
         var T = $(card).find('.post-link span')[0];
         if (T.offsetHeight > H) {
             console.log('fixing');
