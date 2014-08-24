@@ -18,6 +18,7 @@ $(document).ready(function(){
         function(){$(this).addClass("glitch");},
         function(){$(this).removeClass("glitch");}
     );
+    console.log('helloworld')
     $('.article-card').each(function(i, card){
         var H = $(card).find('.article-img').offsetHeight - $(card).children('.provider-text').offsetHeight - $(card).children('.post-date').offsetHeight;
         var T = $(card).find('.post-link span');
