@@ -55,7 +55,7 @@ layout: default
                     <span class="provider-text">{{ post.provider_display }}</span>
                 </div>
                 <br>
-                <span class="post-date">{{ post.published | date: "%b %-d, %Y" }}</span>
+                <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
             </div>
         </li>
         {% endfor %}
