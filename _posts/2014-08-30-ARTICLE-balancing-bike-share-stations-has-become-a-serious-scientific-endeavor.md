@@ -1,6 +1,7 @@
 ---
 categories: [articles]
 provider_display: www.citylab.com
+provider_name: CityLab
 favicon_url: http://cdn.citylab.com/static/citylab/img/icons/favicon.ico
 title: Balancing Bike-Share Stations Has Become a Serious Scientific Endeavor
 published: 2014-08-27T08:50:00
