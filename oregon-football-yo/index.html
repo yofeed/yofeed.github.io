@@ -51,14 +51,12 @@
 
             #yo-button {
                 display: block;
-                zoom: 1.2;
-                margin: 0 auto;
+                zoom: 3.2;
                 position: relative;
-                top: 4px;
+                top: 5px;
             }
 
             .yo-open {
-                left: -230px;
                 max-width: 235px !important;
             }
 
@@ -128,6 +126,9 @@
         	s.type = "text/javascript";
         	s.src = "//yoapp.s3.amazonaws.com/js/yo-button.js";
         	(document.head || document.getElementsByTagName("head")[0]).appendChild(s);
+            $('#yo-button').on('click',function(){
+                $('#yo-button').css('zoom', 1.4);
+            });
         </script>
     </body>
 </html>
