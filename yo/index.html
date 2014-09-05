@@ -175,6 +175,34 @@
             	border-width: 36px;
             	margin-left: -36px;
             }
+
+            @media screen and (max-width: 647px) {
+                h2 {
+                    text-shadow: none;
+                }
+                .contain {
+                    width: 92%;
+                    margin: 0 4%;
+                }
+                .big-bar {height: 120px;}
+                .main-title, .subtitle {text-align: center;}
+
+                #clipboard-copy {
+                    zoom: .7;
+                }
+
+                #htc-outer {height: 465px;}
+                #htc-one {display: none;}
+
+                #screen-content {
+                    display: block;
+                    top: 0;
+                    left: 0;
+                    zoom: .7;
+                    margin: 0 auto;
+                }
+            }
+
         </style>
 
     </head>
@@ -188,8 +216,8 @@
         <div class="contain">
             <h2>How it works</h2>
             <h2>1. Copy your RSS feed's URL to your clipboard.</h2>
-             <p id="how">(How?)</p>
-            <div id="clipboard-copy"><div id="copy-box"></div></div>
+            <!--<p id="how">(How?)</p>
+            <div id="clipboard-copy"><div id="copy-box"></div></div>-->
             <h2>2. Send a Yo link to YOFEED</h2>
             <div id="htc-outer">
                 <section id="htc-one">
@@ -209,7 +237,7 @@
                     <div class="arrow_box" id="press">Press and hold YOFEED in the Yo app</div>
                 </div>
             </div>
-            <h2>3. YOFEED will send you a link everytime your RSS feed updates!</h2>
+            <h2>3. YOFEED will send you the latest Yolink from your RSS feed every time it updates!</h2>
         </div>
         <script type="text/javascript">
             /*! jQuery v2.1.1 | (c) 2005, 2014 jQuery Foundation, Inc. | jquery.org/license */
