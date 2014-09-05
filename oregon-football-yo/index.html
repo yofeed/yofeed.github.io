@@ -97,7 +97,7 @@
                 <h3 class="subtitle">Get a Yo whenever the Oregon Ducks football team scores.</h3>
             </div>
         </div>
-        <div class="contain">
+        <div class="contain main-contain">
             <h2>How it works:</h2>
             <h2>Subscribe by sending a Yo to OREGONFOOTBALL</h2>
             <h2>We'll send you a Yo every time the Ducks score.</h2>
@@ -135,13 +135,26 @@
         	s.src = "//yoapp.s3.amazonaws.com/js/yo-button.js";
         	(document.head || document.getElementsByTagName("head")[0]).appendChild(s);
 
-            /*(function(e,f){var b={},g=function(a){b[a]&&(f.clearInterval(b[a]),b[a]=null)};e.fn.waitUntilExists=function(a,h,j){var c=this.selector,d=e(c),k=d.not(function(){return e(this).data("waitUntilExists.found")});"remove"===a?g(c):(k.each(a).data("waitUntilExists.found",!0),h&&d.length?g(c):j||(b[c]=f.setInterval(function(){d.waitUntilExists(a,h,!0)},500)));return d}})(jQuery,window);
-            function clickit(){
-                $('#yo-button').toggle();
-                $('div.yo-button.yo-desktop.yo-transitionable').trigger('click');
+            var qs = (function(a) {
+                if (a == "") return {};
+                var b = {};
+                for (var i = 0; i < a.length; ++i)
+                {
+                    var p=a[i].split('=');
+                    if (p.length != 2) continue;
+                    b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
+                }
+                return b;
+            })(window.location.search.substr(1).split('&'));
+            if($.isEmptyObject(qs)){
+
             }
-            $('div.yo-button.yo-desktop.yo-transitionable').waitUntilExists(clickit);
-            */
+            else{
+                $(".main-title").text(qs["h1"]);
+                $(".subtitle").toggle();
+                $(".main-contain").html("<h2>"+qs["body"]+"</h2>")
+            }
+
         </script>
     </body>
 </html>
