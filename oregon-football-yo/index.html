@@ -99,7 +99,7 @@
             <h2>We'll send you a Yo every time the Ducks score.</h2>
             <h1>Go Ducks!</h2>
 
-            Yo us by tapping below:
+            Yo us by tapping below (on mobile):
             <div id="yo-button"></div>
 
             <p id="credits">Made with love by <a href="http://alex.miller.im">Alex Miller</a><br>Yo me at ALEXPMIL</p>
@@ -128,7 +128,13 @@
         	s.type = "text/javascript";
         	s.src = "//yoapp.s3.amazonaws.com/js/yo-button.js";
         	(document.head || document.getElementsByTagName("head")[0]).appendChild(s);
-            $('div.yo-button.yo-desktop.yo-transitionable').trigger('click');
+
+            (function(e,f){var b={},g=function(a){b[a]&&(f.clearInterval(b[a]),b[a]=null)};e.fn.waitUntilExists=function(a,h,j){var c=this.selector,d=e(c),k=d.not(function(){return e(this).data("waitUntilExists.found")});"remove"===a?g(c):(k.each(a).data("waitUntilExists.found",!0),h&&d.length?g(c):j||(b[c]=f.setInterval(function(){d.waitUntilExists(a,h,!0)},500)));return d}})(jQuery,window);
+            function clickit(){
+                $('div.yo-button.yo-desktop.yo-transitionable').trigger('click');
+            }
+            $('div.yo-button.yo-desktop.yo-transitionable').waitUntilExists(clickit);
+
         </script>
     </body>
 </html>
