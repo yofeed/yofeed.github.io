@@ -5,10 +5,10 @@
       <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>YOFEED | Get Yo'd When RSS Feed Updates</title>
+        <title>YOFEED Message</title>
         <meta name="viewport" content="width=device-width">
         <meta name="description" content="Yo YOFEED with a link to your favorite RSS feed. We'll Yo you back when your feed updates with the newest post." />
-        <link rel="canonical" href="http://alex.miller.im/yo/" />
+        <link rel="canonical" href="http://alex.miller.im/yo-message/" />
         <style>
             @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
             html, body {
@@ -101,8 +101,9 @@
                 }
                 return b;
             })(window.location.search.substr(1).split('&'));
-            $(".main-title").text(qs["h1"])
-            $("#link").text(qs["link"])
+            $(".main-title").text(qs["h1"]);
+            $("#link").text(qs["link"]);
+            $("title").text("Yo "+ qs["username"] + "!");
         </script>
     </body>
 </html>
