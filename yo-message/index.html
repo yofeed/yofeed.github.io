@@ -101,14 +101,9 @@
                 }
                 return b;
             })(window.location.search.substr(1).split('&'));
-            if(qs=={}){
-                $("body").html("");
-            }
-            else{
-                $(".main-title").text(qs["h1"]);
-                $("#link").text(qs["link"]);
-                if(qs["username"].length>0){ $("title").text("Yo "+ qs["username"] + "!");}
-            }
+            $(".main-title").text(qs["h1"]);
+            $("#link").text(qs["link"]);
+            if(qs["username"].length>0){ $("title").text("Yo "+ qs["username"] + "!");}
         </script>
     </body>
 </html>
