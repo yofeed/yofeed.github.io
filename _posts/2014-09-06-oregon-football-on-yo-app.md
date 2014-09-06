@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "OREGONFOOTBALL on Yo!"
-categories: articles
+categories: blog
 author: "Alex Miller"
 meta:
 tags: template
