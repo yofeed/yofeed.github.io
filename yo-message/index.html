@@ -69,7 +69,7 @@
                 <h1 class="main-title">YOFEED</h1>
             </div>
         </div>
-        <div class="contain">
+        <div class="contain main-contain">
                 <h2>You'll get a Yolink from YOFEED every time your feed updates:</h2>
                 <h3 id="link"></h3>
                 <h2>Just tap the notification when it comes in and you'll be sent straight to the latest post.</h2>
@@ -101,7 +101,12 @@
                 return b;
             })(window.location.search.substr(1).split('&'));
             $(".main-title").text(qs["h1"]);
-            $("#link").text(qs["link"]);
+            if("link" in qs){
+                $("#link").text(qs["link"]);
+            }
+            if("error" in qs){
+                $('.main-contain').html('<h2>'+qs["error"]+'</h2>')
+            }
             try{
                 if(qs["username"].length>0){ $("title").text("Yo "+ qs["username"] + "!");}
             }
