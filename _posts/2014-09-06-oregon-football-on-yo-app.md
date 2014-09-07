@@ -5,6 +5,7 @@ categories: blog
 author: "Alex Miller"
 meta:
 tags: template
+source: http://alex.miller.im/oregon-football-yo/
 ---
 
 

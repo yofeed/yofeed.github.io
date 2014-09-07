@@ -10,7 +10,11 @@ layout: default
         {% for post in site.categories.blog limit:2  %}
         <li class="card">
             <div class="post-info">
+                {% if post.source == "default" %}
                 <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
+                {% else %}
+                <a class="post-link" href="{{ post.source }}">{{ post.title }}</a>
+                {% endif %}
                 <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
             </div>
         </li>
