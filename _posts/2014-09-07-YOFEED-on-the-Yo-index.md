@@ -5,6 +5,7 @@ categories: blog
 author: "Alex Miller"
 meta:
 tags: template
+source: default
 ---
 
 For those of you into [Yo](http://justyo.co), I've recently made a new service called YOFEED. I've been featured on the Yo Index and thought I'd share YOFEED on my blog.
