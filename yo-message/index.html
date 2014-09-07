@@ -51,6 +51,20 @@
                 word-wrap: break-word;
             }
 
+            .notif {
+                width: 95%;
+                text-align: center;
+                margin: 0 auto;
+            }
+
+            .links h3 {
+                margin-top: 50px;
+            }
+
+            .remove-link {
+                color: #ffffff;
+            }
+
             #email {
                 text-align: center;
             }
@@ -78,9 +92,15 @@
             </div>
         </div>
         <div class="contain main-contain">
-                <h2>You'll get a Yolink from YOFEED every time your feed updates:</h2>
-                <h3 id="link"></h3>
+                <h2>You'll get a Yolink from YOFEED every time your feed(s) updates.</h2>
+                <img class="notif" src="https://www.pythonanywhere.com/user/alexpmil/files/home/alexpmil/mr.hyde/img/yofeed-notif.jpg"/>
                 <h2>Just tap the notification when it comes in and you'll be sent straight to the latest post.</h2>
+                <h2>You are currently subscribed to:</h2>
+
+                <div class="links">
+
+                </div>
+
         </div>
         <br>
         <p id="email">Questions? Email me at <a href="mailto:yo@yofeed.rocks">yo@yofeed.rocks</a<p>
@@ -111,8 +131,11 @@
                 return b;
             })(window.location.search.substr(1).split('&'));
             $(".main-title").text(qs["h1"]);
-            if("link" in qs){
-                $("#link").text(qs["link"]);
+            if("links" in qs){
+                links = qs["links"].split('@$')
+                for(i=0;i<links.length;i++){
+                    $('.links').append('<h3 class="link">'+links[i]+'</h3><a class="remove-link" href="http://api.alex.miller.im/yofeed-remove?username='+qs["username"]+'&feed='+encodeURIComponent(links[i])+'">REMOVE</a>')
+                }
             }
             if("error" in qs){
                 $('.main-contain').html('Please send a valid link.')
