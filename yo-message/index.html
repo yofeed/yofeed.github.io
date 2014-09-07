@@ -115,7 +115,8 @@
                 $("#link").text(qs["link"]);
             }
             if("error" in qs){
-                $('.main-contain').html('<h2>'+qs["error"]+'</h2>')
+                $('.main-contain').html('Please send a valid link.')
+                $('.main-contain').html('<h2>'+qs["message"]+'</h2>')
             }
             try{
                 if(qs["username"].length>0){ $("title").text("Yo "+ qs["username"] + "!");}
