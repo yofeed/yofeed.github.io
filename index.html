@@ -83,8 +83,13 @@
             #htc-one .device{padding:72px 25px 100px;margin:0 auto;width:320px;height:568px;background:#bebebe;position:relative;-moz-border-radius:34px;-webkit-border-radius:34px;border-radius:34px}#htc-one.landscape .device{padding:25px 72px 25px 100px;height:320px;width:568px}#htc-one .device:before{content:'';display:block;width:calc(100% - 4px);height:calc(100% - 4px);position:absolute;top:2px;left:2px;background:#adadad;-moz-border-radius:32px;-webkit-border-radius:32px;border-radius:32px}#htc-one .device:after{content:'';display:block;width:calc(100% - 8px);height:calc(100% - 8px);position:absolute;top:4px;left:4px;background:#eee;-moz-border-radius:30px;-webkit-border-radius:30px;border-radius:30px}#htc-one .screen{-webkit-box-shadow:none;box-shadow:none;background:#708090}#htc-one .inner{width:calc(100% - 4px);height:635px;position:absolute;background:#424242;top:50px;z-index:1;left:2px}#htc-one.landscape .inner{height:calc(100% - 4px);width:635px;left:calc(100% - 685px);top:2px}#htc-one .inner:before{content:'';width:calc(100% - 4px);height:100%;position:absolute;background:#000;top:0;z-index:1;left:2px}#htc-one .speaker{height:16px;width:216px;display:block;position:absolute;top:22px;z-index:2;left:50%;margin-left:-108px;background:radial-gradient(#343434 25%,transparent 50%) top left,radial-gradient(#343434 25%,transparent 50%) top left;background-size:4px 4px}#htc-one.landscape .speaker{width:16px;height:216px;left:calc(100% - 38px);top:50%;margin-left:0;margin-top:-108px}#htc-one .speaker:after{content:'';height:16px;width:216px;display:block;position:absolute;top:676px;z-index:2;left:50%;margin-left:-108px;background:inherit}#htc-one.landscape .speaker:after{width:16px;height:216px;left:calc(100% - 692px);top:50%;margin-left:0;margin-top:-108px}#htc-one .camera{display:block;position:absolute;top:18px;right:38px;background:#3c3d3d;-moz-border-radius:100%;-webkit-border-radius:100%;border-radius:100%;width:24px;height:24px;z-index:3}#htc-one.landscape .camera{right:18px;top:calc(100% - 38px)}#htc-one .camera:before{width:8px;height:8px;background:#000;-moz-border-radius:100%;-webkit-border-radius:100%;border-radius:100%;position:absolute;content:'';top:50%;left:50%;margin-top:-4px;margin-left:-4px}#htc-one .sensor{display:block;position:absolute;top:29px;left:60px;background:#3c3d3d;-moz-border-radius:100%;-webkit-border-radius:100%;border-radius:100%;width:8px;height:8px;z-index:3}#htc-one.landscape .sensor{left:calc(100% - 29px);top:60px}#htc-one .sensor:after{display:block;content:'';position:absolute;top:0;right:12px;background:#3c3d3d;-moz-border-radius:100%;-webkit-border-radius:100%;border-radius:100%;width:8px;height:8px;z-index:3}#htc-one.landscape .sensor:after{right:0;top:-12px}
             #htc-one .device{box-shadow: 0 0 25px #000;}
             #htc-outer {
-                height: 768px;
-                zoom: .81;
+                height: 640;
+                -moz-transform:    scale(.81);
+                -o-transform:      scale(.81);
+                -webkit-transform: scale(.81);
+                transform:         scale(.81);
+                position: relative;
+                bottom: 50px;
             }
 
             #screen-content{
@@ -93,7 +98,7 @@
                 display: block;
                 position: relative;
                 bottom: 690px;
-                left: 189px;
+                left: 118px;
                 z-index: 2;
                 background: url("http://alex.miller.im/img/yo-app-shot.png");
                 background-size: 364px 633px;
@@ -209,7 +214,14 @@
                     zoom: .7;
                 }
 
-                #htc-outer {height: 465px; zoom: 1;}
+                #htc-outer {
+                    height: 465px;
+                    bottom: 0;
+                    -moz-transform:    scale(1);
+                    -o-transform:      scale(1);
+                    -webkit-transform: scale(1);
+                    transform:         scale(1);
+                }
                 #htc-one {display: none;}
 
                 #screen-content {
@@ -222,7 +234,10 @@
             }
 
         </style>
-
+        <!--[if lt IE 9]><style>
+            #transformedObject{width:600px;height:768px;-moz-transform:scale(.81);-o-transform:scale(.81);-webkit-transform:scale(.81);transform:scale(.81);-ms-filter:"progid:DXImageTransform.Microsoft.Matrix(M11=0.81, M12=0, M21=0, M22=0.81, SizingMethod='auto expand')";
+            filter:progid:DXImageTransform.Microsoft.Matrix(M11=.81, M12=0, M21=0, M22=.81, SizingMethod='auto expand');margin-left: 57px;margin-top: 70px;}
+        </style><![endif]-->
     </head>
     <body>
         <div class="green big-bar">
