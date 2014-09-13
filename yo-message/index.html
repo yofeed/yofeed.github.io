@@ -31,6 +31,9 @@
             }
             h2 { font-size: 1.5em;}
             h3 { font-size: 1.1em; }
+            a {
+                color: #ffffff;
+            }
 
             .main-title {margin-bottom: 7px;}
             .subtitle { margin: 1px 0; }
@@ -67,9 +70,6 @@
 
             #email {
                 text-align: center;
-            }
-            #email a {
-                color: #ffffff;
             }
 
             @media screen and (max-width: 647px) {
@@ -119,18 +119,18 @@
                 return b;
             })(window.location.search.substr(1).split('&'));
             $(".main-title").text(qs["h1"]);
-            if("links" in qs){
-                links = qs["links"].split('@$')
+            if("info" in qs){
+                links = qs["info"].split('@$')
                 for(i=0;i<links.length;i++){
                     feed_info = links[i].split('$s$')
                     feed_link = feed_info[0]
                     feed_title = feed_info[1]
                     last_title = feed_info[2]
                     last_link = feed_info[3]
-                    $('.links').append('<h3 class="link">'+feed_title+'</h3>\
+                    $('.links').append('<h3 class="link">'+feed_title+' <a class="remove-link" href="http://api.alex.miller.im/yofeed-remove?username='+qs["username"]+'&feed='+encodeURIComponent(feed_link)+'">(REMOVE)</a></h3>\
                     <p class="post">Last post:</p>\
                     <a href="'+last_link+'">'+last_title+'</a>\
-                    <a class="remove-link" href="http://api.alex.miller.im/yofeed-remove?username='+qs["username"]+'&feed='+encodeURIComponent(feed_link)+'">REMOVE</a>\
+                    \
                     ')
                 }
             }
