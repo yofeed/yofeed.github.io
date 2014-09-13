@@ -8,7 +8,6 @@
         <title>Hey Yo!</title>
         <meta name="viewport" content="width=device-width">
         <meta name="description" content="Yo YOFEED with a link to your favorite RSS feed. We'll Yo you back when your feed updates with the newest post." />
-        <link rel="canonical" href="http://alex.miller.im/yo-message/" />
         <style>
             @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
             html, body {
@@ -119,7 +118,7 @@
             <h3><a href="http://www.yofeed.rocks">Send us a link on Yo!</a></h3>
             <h2 style="margin-top: 50px">Having trouble?</h2>
             <h3>Paste your feed link below and hit submit</h3>
-            <input id="feed-input" type="text"/>
+            <input id="feed-input" type="text" value=""/>
             <div id="feed-submit">SUBMIT</div>
 
         </div>
@@ -144,6 +143,7 @@
             }
             catch(error){}
             $("#feed-submit").on('tap', function() {
+                console.log('helloworld')
                 var feed = $("#feed-input").value();
                 try{
                     if(feed!=''){
