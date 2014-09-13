@@ -81,7 +81,7 @@
             .links .row .remove-link {
                 color: #ffffff;
                 font-size: .7em;
-                background-color: ;
+                background-color: #E84C3D;
                 border-radius: 3px;
                 padding: 0 2px;
                 position: relative;
@@ -172,12 +172,12 @@
                     feed_title = feed_info[1]
                     last_title = feed_info[2]
                     last_link = feed_info[3]
-                    feed_row = '<div class="row" style="background-color:"++";">'
-                    feed_row += '<h3 class="link">'+feed_title+' <a class="remove-link no_" href="http://api.alex.miller.im/yofeed-remove?username='+qs["username"]+'&feed='+encodeURIComponent(feed_link)+'">(REMOVE)</a></h3>'
+                    feed_row = '<div class="row" style="background-color:'+colors[i]+';"><div class="contain">'
+                    feed_row += '<h3 class="link">'+feed_title+' <a class="remove-link no_" href="http://api.alex.miller.im/yofeed-remove?username='+qs["username"]+'&feed='+encodeURIComponent(feed_link)+'">REMOVE</a></h3>'
                     if(last_title!='None'){
                         feed_row+='<p class="post">Last post: <a href="'+last_link+'">'+last_title+'</a></p>'
                     }
-                    feed_row += '</div>'
+                    feed_row += '</div></div>'
                     $('.links').append(feed_row)
                 }
             }
