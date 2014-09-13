@@ -136,7 +136,7 @@
         <div class="links">
 
         </div>
-        <div class="contain">
+        <div class="contain add-contain">
                 <a  id="add-link" class="no_" href="http://www.yofeed.rocks"><div id="add-feed">ADD FEED</div></a>
         </div>
         <br>
@@ -183,6 +183,7 @@
             if("error" in qs){
                 $('.main-contain').html('Please send a valid link.')
                 $('.main-contain').html('<h2>'+qs["message"]+'</h2>')
+                $('.add-contain').toggle();
             }
             $(".remove-link").on("tap", function(e,d){
                 var count = 0;
