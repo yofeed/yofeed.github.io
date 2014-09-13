@@ -128,9 +128,11 @@
                     feed_title = feed_info[1]
                     last_title = feed_info[2]
                     last_link = feed_info[3]
-                    $('.links').append('<h3 class="link">'+feed_title+' <a class="remove-link" href="http://api.alex.miller.im/yofeed-remove?username='+qs["username"]+'&feed='+encodeURIComponent(feed_link)+'">(REMOVE)</a></h3>\
-                    <p class="post">Last post: <a href="'+last_link+'">'+last_title+'</a></p>\
-                    ')
+                    feed_row = '<h3 class="link">'+feed_title+' <a class="remove-link" href="http://api.alex.miller.im/yofeed-remove?username='+qs["username"]+'&feed='+encodeURIComponent(feed_link)+'">(REMOVE)</a></h3>'
+                    if(last_title!='None'){
+                        feed_row+='<p class="post">Last post: <a href="'+last_link+'">'+last_title+'</a></p>'
+                    }
+                    $('.links').append(feed_row)
                 }
             }
             if("error" in qs){
