@@ -103,6 +103,7 @@
                     margin: 0 4%;
                 }
                 .main-title {text-align: center;}
+                #feed-submit { margin: 20px auto 0 auto; }
             }
         </style>
 
@@ -147,7 +148,11 @@
                 var feed = $("#feed-input").val();
                 try{
                     if(feed!=''){
-                        $('#feed-submit').html('<img src="http://www.yofeed.rocks/img/spinner.gif">')
+                        var count = 0;
+                        setInterval(function(){
+                          count++;
+                          document.getElementById('feed-submit').innerHTML = new Array(count % 10).join('.');
+                        }, 150);
                         window.location = "http://api.alex.miller.im/yofeed-add?feed="+encodeURIComponent(feed)+"&token="+qs["token"]+"&username="+qs["username"]
                     }
                 }
