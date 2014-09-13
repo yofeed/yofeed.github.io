@@ -185,6 +185,13 @@
                 $('.main-contain').html('Please send a valid link.')
                 $('.main-contain').html('<h2>'+qs["message"]+'</h2>')
             }
+            $(".remove-link").on("tap", function(e,d){
+                var count = 0;
+                setInterval(function(){
+                  count++;
+                  e.innerHTML = new Array(count % 10).join('.');
+                }, 150);
+            })
         </script>
     </body>
 </html>
