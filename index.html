@@ -7,7 +7,7 @@
         <title>YOFEED: RSS/Atom Feed Reader for Yo</title>
         <meta name="viewport" content="width=device-width">
         <meta name="description" content="Yo YOFEED with a link to your favorite RSS or Atom feed. We'll Yo you back when your feed updates with the newest posts." />
-        <link rel="canonical" href="http://www.yofeed.rocks" />
+        <link rel="canonical" href="http://www.yofeed.rocks/" />
         <style>
             @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
             html, body {
@@ -79,6 +79,12 @@
                 top: 19px;
                 left: 255px;
             }
+            .nozoom {
+                display: block;
+                width: 299px;
+                height: auto;
+                margin: 0 auto;
+            }
 
             #htc-one .device{padding:72px 25px 100px;margin:0 auto;width:320px;height:568px;background:#bebebe;position:relative;-moz-border-radius:34px;-webkit-border-radius:34px;border-radius:34px}#htc-one.landscape .device{padding:25px 72px 25px 100px;height:320px;width:568px}#htc-one .device:before{content:'';display:block;width:calc(100% - 4px);height:calc(100% - 4px);position:absolute;top:2px;left:2px;background:#adadad;-moz-border-radius:32px;-webkit-border-radius:32px;border-radius:32px}#htc-one .device:after{content:'';display:block;width:calc(100% - 8px);height:calc(100% - 8px);position:absolute;top:4px;left:4px;background:#eee;-moz-border-radius:30px;-webkit-border-radius:30px;border-radius:30px}#htc-one .screen{-webkit-box-shadow:none;box-shadow:none;background:#708090}#htc-one .inner{width:calc(100% - 4px);height:635px;position:absolute;background:#424242;top:50px;z-index:1;left:2px}#htc-one.landscape .inner{height:calc(100% - 4px);width:635px;left:calc(100% - 685px);top:2px}#htc-one .inner:before{content:'';width:calc(100% - 4px);height:100%;position:absolute;background:#000;top:0;z-index:1;left:2px}#htc-one .speaker{height:16px;width:216px;display:block;position:absolute;top:22px;z-index:2;left:50%;margin-left:-108px;background:radial-gradient(#343434 25%,transparent 50%) top left,radial-gradient(#343434 25%,transparent 50%) top left;background-size:4px 4px}#htc-one.landscape .speaker{width:16px;height:216px;left:calc(100% - 38px);top:50%;margin-left:0;margin-top:-108px}#htc-one .speaker:after{content:'';height:16px;width:216px;display:block;position:absolute;top:676px;z-index:2;left:50%;margin-left:-108px;background:inherit}#htc-one.landscape .speaker:after{width:16px;height:216px;left:calc(100% - 692px);top:50%;margin-left:0;margin-top:-108px}#htc-one .camera{display:block;position:absolute;top:18px;right:38px;background:#3c3d3d;-moz-border-radius:100%;-webkit-border-radius:100%;border-radius:100%;width:24px;height:24px;z-index:3}#htc-one.landscape .camera{right:18px;top:calc(100% - 38px)}#htc-one .camera:before{width:8px;height:8px;background:#000;-moz-border-radius:100%;-webkit-border-radius:100%;border-radius:100%;position:absolute;content:'';top:50%;left:50%;margin-top:-4px;margin-left:-4px}#htc-one .sensor{display:block;position:absolute;top:29px;left:60px;background:#3c3d3d;-moz-border-radius:100%;-webkit-border-radius:100%;border-radius:100%;width:8px;height:8px;z-index:3}#htc-one.landscape .sensor{left:calc(100% - 29px);top:60px}#htc-one .sensor:after{display:block;content:'';position:absolute;top:0;right:12px;background:#3c3d3d;-moz-border-radius:100%;-webkit-border-radius:100%;border-radius:100%;width:8px;height:8px;z-index:3}#htc-one.landscape .sensor:after{right:0;top:-12px}
             #htc-one .device{box-shadow: 0 0 25px #000;}
@@ -88,6 +94,10 @@
                 -o-transform:      scale(.81);
                 -webkit-transform: scale(.81);
                 transform:         scale(.81);
+                -moz-transform-origin:    left center;
+                -o-transform-origin:      left center;
+                -webkit-transform-origin: left center;
+                transform-origin:         left center;
                 position: relative;
                 bottom: 50px;
             }
@@ -98,7 +108,7 @@
                 display: block;
                 position: relative;
                 bottom: 689px;
-                left: 119px;
+                left: 4px;
                 z-index: 2;
                 background: url("http://alex.miller.im/img/yo-app-shot.png");
                 background-size: 364px 633px;
@@ -143,7 +153,7 @@
                 background-position: -100% 0%;
             }
 
-            #press {
+            .press {
                 position: relative;
                 left: 24px;
                 top: 34px;
@@ -183,6 +193,38 @@
             	margin-left: -36px;
             }
 
+            #notification {
+                width: 100%;
+                text-align: center;
+            }
+            #notification img {
+                width: 90%;
+                max-width: 294px;
+
+            }
+            #notification .arrow_box {
+                -moz-transform:    scale(.81);
+                -o-transform:      scale(.81);
+                -webkit-transform: scale(.81);
+                transform:         scale(.81);
+                width: 311px;
+                height: 58px;
+                position: relative;
+                right: 27px;
+                bottom: 11px;
+            }
+            #notification .arrow_box p {
+
+            }
+
+            .asterisk {
+                position: relative;
+                top: 13px;
+                font-size: 2em;
+                font-weight: 500;
+                margin: 0 4px;
+            }
+
             p {
                 text-align: center;
             }
@@ -219,23 +261,37 @@
                     zoom: .7;
                 }
 
+                .nozoom {
+                    width: 253px;
+                }
+
                 #htc-outer {
                     height: 465px;
-                    bottom: 0;
-                    -moz-transform:    scale(1);
-                    -o-transform:      scale(1);
-                    -webkit-transform: scale(1);
-                    transform:         scale(1);
+                    bottom: 60px;
+                    -moz-transform:    scale(.7);
+                    -o-transform:      scale(.7);
+                    -webkit-transform: scale(.7);
+                    transform:         scale(.7);
                 }
                 #htc-one {display: none;}
 
                 #screen-content {
                     display: block;
-                    top: 0;
+                    position: relative;
+                    bottom: 0;
                     left: 0;
-                    zoom: .7;
-                    margin: 0 auto;
                 }
+                /*
+                #notification .arrow_box {
+                    -moz-transform:    scale(.7);
+                    -o-transform:      scale(.7);
+                    -webkit-transform: scale(.7);
+                    transform:         scale(.7);
+                    position: relative;
+                    right: 0;
+                    bottom: -3px;
+                    margin: 0 auto;
+                }*/
             }
 
         </style>
@@ -257,26 +313,34 @@
             <!--<p id="how">(How?)</p>
             <div id="clipboard-copy"><div id="copy-box"></div></div>-->
             <h2>2. Add YOFEED to your contacts and send us a Yolink</h2>
-            <div id="htc-outer">
-                <section id="htc-one">
-                	<div class="wrap">
-                		<div class="device">
-                			<div class="camera"></div>
-                			<div class="sensor"></div>
-                			<div class="speaker"></div>
-                			<div class="inner"></div>
-                		</div>
-                	</div>
-                </section>
-                <div id="screen-content">
-                    <div class="yo-row-hold" id="row-hold"></div>
-                    <div class="yo-row">SENDING LINK</div>
-                    <div class="yo-row-hold" id="spinner"><img src="http://alex.miller.im/img/spinner.gif"></div>
-                    <div class="arrow_box" id="press">Press and hold YOFEED in the Yo app</div>
+            <div class="nozoom">
+                <div id="htc-outer">
+                    <section id="htc-one">
+                    	<div class="wrap">
+                    		<div class="device">
+                    			<div class="camera"></div>
+                    			<div class="sensor"></div>
+                    			<div class="speaker"></div>
+                    			<div class="inner"></div>
+                    		</div>
+                    	</div>
+                    </section>
+                    <div id="screen-content">
+                        <div class="yo-row-hold" id="row-hold"></div>
+                        <div class="yo-row">SENDING LINK</div>
+                        <div class="yo-row-hold" id="spinner"><img src="http://www.yofeed.rocks/img/spinner.gif"></div>
+                        <div class="arrow_box press">Press and hold YOFEED in the Yo app</div>
+                    </div>
                 </div>
             </div>
             <h2>3. YOFEED will Yo you with the latest link from your RSS feed every time it updates!</h2>
             <h3 style="text-align: center">(Tap the notification to visit the link)</h3>
+            <!--<div id="notification">
+                <img src="http://www.yofeed.rocks/img/yofeed-notif.jpg">
+                <div class="arrow_box press">
+                    Just tap any Yo with a <span class="asterisk">*</span> to visit the link
+                </div>
+            </div>-->
             <br>
             <p>Once you've added at least one feed, send a plain Yo (without link) to YOFEED to manage your subscriptions.</p>
             <br>
@@ -299,8 +363,8 @@
             <p id="credits">Made with love by <a href="http://alex.miller.im">Alex Miller</a><br><a href="http://justyo.co/ALEXPMIL/"><span class="inline-yo">YO</span> me at ALEXPMIL</a></p>
         </div>
         <script type="text/javascript" src="/js/jquery.min.js"></script>
-        <script type="text/javascript" src="/js/yo.js"></script>
-        <script>
+        <script type="text/javascript">
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-37920818-1', 'auto');ga('send', 'pageview');
             function animate_yolink(){
                 console.log("animating");
                 var base = 4000;
