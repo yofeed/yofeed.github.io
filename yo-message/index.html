@@ -72,7 +72,6 @@
                 width: 100%;
                 height: auto;
                 padding: 10px 0 10px 0;
-                margin: 20px 0 20px 0;
             }
             .links .row h3 {
 
@@ -83,7 +82,7 @@
                 font-size: .7em;
                 background-color: #E84C3D;
                 border-radius: 3px;
-                padding: 0 2px;
+                padding: 0 5px;
                 position: relative;
                 bottom: 2px;
             }
@@ -162,7 +161,7 @@
             }
             catch(error){}
             $(".main-title").text(qs["h1"]);
-            colors = ["#16A085", "#3498DB", "#34495E", "#2ECC71"]
+            colors = ["#3498DB", "#34495E", "#2ECC71","#16A085"]
             if("info" in qs){
                 links = qs["info"].split('@$')
                 if(links.length==0){$('.links').text("None!")}
