@@ -62,13 +62,30 @@
                 margin: 0 auto;
             }
 
-            .links h3 {
+            .links {
+                width: 100%;
                 margin-top: 40px;
             }
 
-            .remove-link {
+            .links .row {
+                display: block;
+                width: 100%;
+                height: auto;
+                padding: 10px 0 10px 0;
+                margin: 20px 0 20px 0;
+            }
+            .links .row h3 {
+
+            }
+
+            .links .row .remove-link {
                 color: #ffffff;
                 font-size: .7em;
+                background-color: ;
+                border-radius: 3px;
+                padding: 0 2px;
+                position: relative;
+                bottom: 2px;
             }
 
             #add-feed {
@@ -116,11 +133,11 @@
                 <!--<img class="notif" src="https://www.pythonanywhere.com/user/alexpmil/files/home/alexpmil/mr.hyde/img/yofeed-notif.jpg"/>-->
                 <h2>Just tap the notification when it comes in and you'll be sent straight to the latest post.</h2>
                 <h2>You are currently subscribed to:</h2>
+        </div>
+        <div class="links">
 
-                <div class="links">
-
-                </div>
-
+        </div>
+        <div class="contain main-contain">
                 <a  id="add-link" class="no_" href="http://www.yofeed.rocks"><div id="add-feed">ADD FEED</div></a>
 
         </div>
@@ -145,6 +162,7 @@
             }
             catch(error){}
             $(".main-title").text(qs["h1"]);
+            colors = ["#16A085", "#3498DB", "#34495E", "#2ECC71"]
             if("info" in qs){
                 links = qs["info"].split('@$')
                 if(links.length==0){$('.links').text("None!")}
@@ -154,10 +172,12 @@
                     feed_title = feed_info[1]
                     last_title = feed_info[2]
                     last_link = feed_info[3]
-                    feed_row = '<h3 class="link">'+feed_title+' <a class="remove-link" href="http://api.alex.miller.im/yofeed-remove?username='+qs["username"]+'&feed='+encodeURIComponent(feed_link)+'">(REMOVE)</a></h3>'
+                    feed_row = '<div class="row" style="background-color:"++";">'
+                    feed_row += '<h3 class="link">'+feed_title+' <a class="remove-link no_" href="http://api.alex.miller.im/yofeed-remove?username='+qs["username"]+'&feed='+encodeURIComponent(feed_link)+'">(REMOVE)</a></h3>'
                     if(last_title!='None'){
                         feed_row+='<p class="post">Last post: <a href="'+last_link+'">'+last_title+'</a></p>'
                     }
+                    feed_row += '</div>'
                     $('.links').append(feed_row)
                 }
             }
