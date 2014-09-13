@@ -34,6 +34,8 @@
             a {
                 color: #ffffff;
             }
+            .no_ { text-decoration: none;}
+
 
             .main-title {margin-bottom: 7px;}
             .subtitle { margin: 1px 0; }
@@ -69,6 +71,21 @@
                 font-size: .7em;
             }
 
+            #add-feed {
+                margin: 20px auto 10px auto;
+                padding: 10px 20px;
+                font-size: 22px;
+                font-weight: 500;
+                border-radius: 8px;
+                background-color: #2980B9;
+                width: 140px;
+                text-align:center;
+            }
+
+            #add-feed:hover{
+                background-color: #F1C40F;
+            }
+
             #email {
                 text-align: center;
             }
@@ -102,6 +119,8 @@
 
                 </div>
 
+                <a  id="add-link" class="no_" href="http://www.yofeed.rocks"><div id="add-feed">ADD FEED</div></a>
+
         </div>
         <br>
         <p id="email">Questions? Email me at <a href="mailto:yo@yofeed.rocks">yo@yofeed.rocks</a<p>
@@ -119,9 +138,14 @@
                 }
                 return b;
             })(window.location.search.substr(1).split('&'));
+            try{
+                if(qs["username"].length>0){ $("title").text("Yo "+ qs["username"] + "!");}
+            }
+            catch(error){}
             $(".main-title").text(qs["h1"]);
             if("info" in qs){
                 links = qs["info"].split('@$')
+                if(links.length==0){$('.links').text("None!")}
                 for(i=0;i<links.length;i++){
                     feed_info = links[i].split('$s$')
                     feed_link = feed_info[0]
@@ -135,15 +159,11 @@
                     $('.links').append(feed_row)
                 }
             }
+            $("#add-link").attr("href","http://www.yofeed.rocks/add-feed/?username="+qs["username"]+"&token="+qs["token"])
             if("error" in qs){
                 $('.main-contain').html('Please send a valid link.')
                 $('.main-contain').html('<h2>'+qs["message"]+'</h2>')
             }
-            try{
-                if(qs["username"].length>0){ $("title").text("Yo "+ qs["username"] + "!");}
-            }
-            catch(error){}
-
         </script>
     </body>
 </html>
