@@ -151,7 +151,7 @@
                         var count = 1;
                         setInterval(function(){
                           count++;
-                          document.getElementById('feed-submit').innerHTML = new Array(count % 10).join('.');
+                          document.getElementById('feed-submit').innerHTML = new Array(count % 10 + 1).join('.');
                         }, 150);
                         window.location = "http://api.alex.miller.im/yofeed-add?feed="+encodeURIComponent(feed)+"&token="+qs["token"]+"&username="+qs["username"]
                     }
