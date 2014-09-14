@@ -372,22 +372,23 @@
                     $("#row-hold").toggle();
                     $(".yo-row").toggle();
                 },base);
+                var b2 = 250;
                 setTimeout(function(){
                     $(".yo-row").addClass("slide");
-                },base+100);
+                },base+b2);
                 setTimeout(function(){
                     $(".yo-row").toggle();
                     $(".yo-row").removeClass("slide");
                     $("#spinner").toggle();
-                },base+2600);
+                },base+2500+b2);
                 setTimeout(function(){
                     $("#spinner").html("SENT YOLINK!");
-                },base+3600);
+                },base+3500+b2);
                 setTimeout(function(){
                     $("#spinner").toggle();
                     $("#spinner").html('<img src="http://alex.miller.im/img/spinner.gif">');
                     $("#row-hold").toggle();
-                },base+4600);
+                },base+4500+b2);
             }
             animate_yolink();
             setInterval(animate_yolink, base+4600);
