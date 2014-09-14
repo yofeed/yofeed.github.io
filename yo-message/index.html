@@ -188,7 +188,7 @@
                     if(last_link!='None'){
                         feed_row+='<a class="action-link latest-post" href="'+last_link+'">LATEST POST</a>'
                     }
-                    feed_row += '<a class="action-link remove" href="http://api.alex.miller.im/yofeed-remove?username='+qs["username"]+'&feed='+encodeURIComponent(feed_link)+'">REMOVE</a>'
+                    feed_row += '<a class="action-link remove" href="http://api.alex.miller.im/yofeed-remove?username='+qs["username"]+'&feed='+encodeURIComponent(feed_link)+'&token='+qs["token"]+'">REMOVE</a>'
                     feed_row += '</div></div>'
                     $('.links').append(feed_row)
                 }
