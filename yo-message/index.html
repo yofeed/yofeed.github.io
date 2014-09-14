@@ -192,7 +192,7 @@
                     feed_row += '</div></div>'
                     $('.links').append(feed_row)
                 }
-                $('.links').append('<p>You can always YO us to receive a Yolink back to this page.</p>')
+                $('.links').append('<div class="contain"><p style="text-align: center; margin-top: 10px;">You can always YO us to receive a Yolink back to this page.</p></div>')
             }
             $("#add-link").attr("href","http://www.yofeed.rocks/add-feed/?username="+qs["username"]+"&token="+qs["token"])
             if("error" in qs){
