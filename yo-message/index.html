@@ -77,14 +77,26 @@
 
             }
 
-            .links .row .remove-link {
+            .links .row .action-link {
                 color: #ffffff;
                 font-size: .7em;
-                background-color: #E84C3D;
                 border-radius: 3px;
-                padding: 0 5px;
+                padding: 0 6px;
                 position: relative;
                 bottom: 2px;
+                margin-right: 10px;
+                text-decoration: none;
+            }
+            .links .row .action-link.remove {
+                background-color: #E84C3D;
+            }
+
+            .links .row .action-link.feed {
+                background-color: #F1C40F;
+            }
+
+            .links .row .action-link.latest-post {
+                background-color: #8E44AD;
             }
 
             #add-feed {
@@ -171,10 +183,12 @@
                     last_title = feed_info[2]
                     last_link = feed_info[3]
                     feed_row = '<div class="row" style="background-color:'+colors[i]+';"><div class="contain">'
-                    feed_row += '<h3 class="link">'+feed_title+' <a class="remove-link no_" href="http://api.alex.miller.im/yofeed-remove?username='+qs["username"]+'&feed='+encodeURIComponent(feed_link)+'">REMOVE</a></h3>'
-                    if(last_title!='None'){
-                        feed_row+='<p class="post">Last post: <a href="'+last_link+'">'+last_title+'</a></p>'
+                    feed_row += '<h3 class="link">'+feed_title+'</h3><br>'
+                    feed_row += '<a class="action-link feed" href="'+feed_link+'">FEED</a>'
+                    if(last_link!='None'){
+                        feed_row+='<a class="action-link latest-post" href="'+last_link+'">LATEST POST</a>
                     }
+                    feed_row += '<a class="action-link remove" href="http://api.alex.miller.im/yofeed-remove?username='+qs["username"]+'&feed='+encodeURIComponent(feed_link)+'">REMOVE</a>'
                     feed_row += '</div></div>'
                     $('.links').append(feed_row)
                 }
@@ -185,7 +199,7 @@
                 $('.main-contain').html('<h2>'+qs["message"]+'</h2>')
                 $('.add-contain').toggle();
             }
-            $(".remove-link").on("tap", function(e,d){
+            $(".action-link").on("tap", function(e,d){
                 var count = 0;
                 setInterval(function(){
                   count++;
