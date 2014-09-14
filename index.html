@@ -366,6 +366,7 @@
         <script type="text/javascript" src="/js/yo.js"></script>
         <script type="text/javascript">
             function animate_yolink(){
+                console.log("animating");
                 var base = 3500;
                 setTimeout(function(){
                     $("#row-hold").toggle();
@@ -373,23 +374,23 @@
                 },base);
                 setTimeout(function(){
                     $(".yo-row").addClass("slide");
-                },base+1500);
+                },base+500);
                 setTimeout(function(){
                     $(".yo-row").toggle();
                     $(".yo-row").removeClass("slide");
                     $("#spinner").toggle();
-                },base+4000);
+                },base+3000);
                 setTimeout(function(){
                     $("#spinner").html("SENT YOLINK!");
-                },base+5000);
+                },base+4000);
                 setTimeout(function(){
                     $("#spinner").toggle();
                     $("#spinner").html('<img src="http://alex.miller.im/img/spinner.gif">');
                     $("#row-hold").toggle();
-                },base+6000);
+                },base+5000);
             }
             animate_yolink();
-            setInterval(animate_yolink, 10000);
+            setInterval(animate_yolink, base+5000);
         </script>
     </body>
 </html>
