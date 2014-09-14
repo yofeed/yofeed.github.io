@@ -197,7 +197,9 @@
             if("error" in qs){
                 $('.main-contain').html('Please send a valid link.')
                 $('.main-contain').html('<h2>'+qs["message"]+'</h2>')
-                $('.add-contain').toggle();
+                if(qs["error"]!=0){
+                    $('.add-contain').toggle();
+                }
             }
             $(".action-link").on("tap", function(e,d){
                 var count = 0;
