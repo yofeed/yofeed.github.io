@@ -139,7 +139,7 @@
                 }
                 return b;
             })(window.location.search.substr(1).split('&'));
-            window.history.replaceState("","",window.location.pathname);
+            //window.history.replaceState("","",window.location.pathname);
             try{
                 if(qs["username"].length>0){ $("title").text("Yo "+ qs["username"] + "!");}
             }
