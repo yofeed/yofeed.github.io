@@ -180,7 +180,7 @@
             if(qs["h1"]=="YOUR FEEDS"){
                 $('.success').toggle();
             }
-            colors = ["#3498DB", "#34495E", "#2ECC71","#16A085"]
+            colors = ["#3498DB", "#34495E", "#2ECC71","#16A085", "none"]
             if("info" in qs){
                 links = qs["info"].split('@$')
                 if(links.length==0){$('.links').text("None!")}
@@ -190,7 +190,7 @@
                     feed_title = feed_info[1]
                     last_title = feed_info[2]
                     last_link = feed_info[3]
-                    feed_row = '<div class="row" style="background-color:'+colors[i]+';"><div class="contain">'
+                    feed_row = '<div class="row" style="background-color:'+colors[i % 5]+';"><div class="contain">'
                     feed_row += '<h3 class="link">'+feed_title+'</h3><br>'
                     feed_row += '<a class="action-link feed" href="'+feed_link+'">FEED</a>'
                     if(last_link!='None'){
