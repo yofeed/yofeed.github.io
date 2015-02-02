@@ -12,7 +12,7 @@
                 tracker.send('pageview');
                 tracker.send('send', 'event', 'Yolink Opened', user, destination);
             }
-            catch {}
+            catch(e) {}
             window.location.replace(destination);
         </script>
     </head>
