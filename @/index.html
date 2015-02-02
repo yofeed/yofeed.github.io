@@ -1,19 +1,26 @@
 <html>
     <head>
-        <title>YOFEED</title>
+        <title>&nbsp;</title>
         <script src="//www.google-analytics.com/analytics.js"></script>
         <script>
+            var destination = decodeURIComponent(param.substring(1, param.length));
             try {
                 var param = location.search;
-                var destination = decodeURIComponent(param.substring(1, param.length));
-                var hash = window.location.hash;
+                if (window.location.hash){var hash = window.location.hash;}
+                else {var hash = "<No Username">;}
                 var user = decodeURIComponent(hash.substring(1, hash.length));
                 var tracker = ga.create('UA-54605726-1', 'auto');
                 tracker.send('pageview');
                 tracker.send('send', 'event', 'Yolink Opened', user, destination);
             }
             catch(e) {}
-            window.location.replace(destination);
+
+            if(destination == ""){
+                window.location.replace('http://www.yofeed.rocks');
+            }
+            else {
+                window.location.replace(destination);
+            }
         </script>
     </head>
 </html>
