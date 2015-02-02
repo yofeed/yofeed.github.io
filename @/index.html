@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>YOFEED</title>
+        <script src="//www.google-analytics.com/analytics.js"></script>
+        <script>
+            var param = location.search;
+            var destination = decodeURIComponent(param.substring(1, param.length));
+            var hash = window.location.hash;
+            var user = decodeURIComponent(hash.substring(1, hash.length));
+            var tracker = ga.create('UA-12345678-1', 'auto');
+            tracker.send('pageview');
+            tracker.send('send', 'event', 'Yolink Opened', user, destination);
+            window.location.replace(destination);
+        </script>
+    </head>
+</html>
