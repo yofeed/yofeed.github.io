@@ -7,7 +7,7 @@
             try {
                 var param = location.search;
                 if (window.location.hash){var hash = window.location.hash;}
-                else {var hash = "<No Username">;}
+                else {var hash = "<No Username>";}
                 var user = decodeURIComponent(hash.substring(1, hash.length));
                 var tracker = ga.create('UA-54605726-1', 'auto');
                 tracker.send('pageview');
