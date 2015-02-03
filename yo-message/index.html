@@ -221,13 +221,13 @@
                 $(".feed").on("click",function(){
                     if(qs["username"] && qs["username"].length>0){ ga('send', 'event', qs["username"], 'Action Link: FEED', $(this).attr("href")); }
                     else{ ga('send', 'event', '_anonymous_', 'Action Link: FEED', $(this).attr("href")); }
-                    console.log(qs["username"], 'Action Link: FEED', $(this).attr("href")));
+                    console.log(qs["username"], 'Action Link: FEED', $(this).attr("href"));
 
                 });
                 $(".latest-post").on("click",function(){
                     if(qs["username"] && qs["username"].length>0){ ga('send', 'event', qs["username"], 'Action Link: LATEST POST', $(this).attr("href")); }
                     else{ ga('send', 'event', '_anonymous_', 'Action Link: LATEST POST', $(this).attr("href")); }
-                    console.log(qs["username"], 'Action Link: LATEST POST', $(this).attr("href")));
+                    console.log(qs["username"], 'Action Link: LATEST POST', $(this).attr("href"));
 
                 });
                 $(".remove").on("click",function(){
